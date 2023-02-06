@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "role": "Software developer",
+    "company": "Devoteam",
+    "current": true,
+    "startMonth": {
+      "en": "Sept",
+      "es": "Sept"
+    },
+    "startYear": 2022,
+    "endMonth": {
+      "en": null,
+      "es": null
+    },
+    "endYear": null
+  }
+]
