@@ -4,14 +4,24 @@
 //     }
 // ]
 
+// TODO: add hover effect active on current page
+
 import Logo from "./Logo";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-
+import { useRouter } from "next/router";
+import { useState } from "react";
+import Hamburguer from "./Hamburguer";
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <header className="w-full sticky h-20 sm:h-24 top-0 z-50 shadow-lg  ">
-      <div className="flex justify-between items-center h-full px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30 ">
+    <header className="w-full sticky h-20 sm:h-24 top-0 z-50  ">
+      <div className="flex justify-between items-center h-full  ">
         <Logo />
         <nav>
           <ul className="hidden md:flex">
@@ -32,32 +42,23 @@ function Header() {
             </Link>
           </ul>
         </nav>
-        <div className="md:hidden rounded-full shadow-lg shadow-gray-600 p-2 cursor-pointer active:shadow-gray-300 transition-shadow duration-200">
-          <AiOutlineMenu
-            className
-            size={25}
-            color={"#21243D"}
-            strokeWidth={30}
-          />
+        <div className="z-[100] md:hidden">
+          <Hamburguer isOpen={isOpen} handleIsOpen={handleOpen} />
         </div>
         <div
-          className="md:hidden fixed left-0 top-0 w-full h-screen bg-black/60"
+          className={
+            isOpen
+              ? "md:hidden fixed left-0 top-0 w-full h-screen transition-all  ease-in-out duration-300 bg-black/60"
+              : " fixed left-[-100%] top-0 transition-all  ease-in-out duration-300"
+          }
           id="mobile-menu"
         >
-          <div className="bg-neutral  h-screen w-full ease-in duration-500 px-5 sm:px-10 md:px-15">
+          <div className="bg-neutral   h-screen w-full px-5 sm:px-10 md:px-15">
             <div
               id="header-mobile"
               className="flex items-center content-center justify-between h-20 sm:h-24"
             >
               <Logo />
-              <div className="rounded-full shadow-lg shadow-gray-600 p-2 cursor-pointer active:shadow-gray-300 transition-shadow duration-200">
-                <AiOutlineClose
-                  className
-                  size={25}
-                  color={"#21243D"}
-                  strokeWidth={30}
-                />
-              </div>
             </div>
             <div className="flex flex-col gap-16">
               <div>
@@ -67,6 +68,11 @@ function Header() {
               </div>
               <div id="mavbar-mobile" className=" py-6 ">
                 <ul className="flex flex-col items-center gap-10">
+                  <Link href={"/"}>
+                    <li className=" active:text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200 ">
+                      Home
+                    </li>
+                  </Link>
                   <Link href={"/aboutme"}>
                     <li className=" active:text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200 ">
                       About me
