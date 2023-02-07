@@ -4,7 +4,7 @@ import React from "react";
 
 function Index() {
   return (
-    <MainLayout>
+    <MainLayout page={"Projects"}>
       <h1>Index projects</h1>
       <Link href={"/projects/afstore"}>Afstore Project</Link>
     </MainLayout>
