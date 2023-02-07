@@ -19,7 +19,7 @@ function Header() {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-full sticky px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30 h-20 sm:h-24 top-0 z-50 bg-neutral shadow-lg mb-5 ">
+    <header className="w-full sticky top-0 z-50 bg-neutral shadow-lg ">
       <div className="flex justify-between items-center h-full  ">
         <Logo />
         <nav>

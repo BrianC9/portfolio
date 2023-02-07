@@ -9,7 +9,9 @@ const rubik = Rubik({
 });
 function MainLayout({ children, page }) {
   return (
-    <div className={`${rubik.className} h-screen w-screen `}>
+    <div
+      className={`${rubik.className} h-screen w-screen px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30`}
+    >
       <Head>
         <title>{`BC - ${page}`}</title>
         <meta

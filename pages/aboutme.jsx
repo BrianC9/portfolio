@@ -121,7 +121,102 @@ function Aboutme() {
             <FaGithub {...PropsIcon} className={StyleIcon} />
           </div>
         </section>
-        <section id="education"></section>
+        <section
+          id="education"
+          className="grid gap-8 my-6 max-w-[85ch] mx-auto "
+        >
+          <h2 className="text-3xl text-secondary">Education</h2>
+
+          <div class="timeline">
+            <div class="containerTime left">
+              <div class="contentTimeLine">
+                <h2>2017</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                  quis iuvaret expetendis his, te elit voluptua dignissim per,
+                  habeo iusto primis ea eam.
+                </p>
+              </div>
+            </div>
+            <div class="containerTime right">
+              <div class="contentTimeLine">
+                <h2>2016</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                  quis iuvaret expetendis his, te elit voluptua dignissim per,
+                  habeo iusto primis ea eam.
+                </p>
+                <h2>2016</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                  quis iuvaret expetendis his, te elit voluptua dignissim per,
+                  habeo iusto primis ea eam.
+                </p>
+              </div>
+            </div>
+            <div class="containerTime left">
+              <div class="contentTimeLine">
+                <h2>2015</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                  quis iuvaret expetendis his, te elit voluptua dignissim per,
+                  habeo iusto primis ea eam.
+                </p>
+                <h2>2016</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                  quis iuvaret expetendis his, te elit voluptua dignissim per,
+                  habeo iusto primis ea eam.
+                </p>
+              </div>
+            </div>
+            <div class="containerTime right">
+              <div class="contentTimeLine">
+                <h2>2012</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                  quis iuvaret expetendis his, te elit voluptua dignissim per,
+                  habeo iusto primis ea eam.
+                </p>
+                <h2>2016</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                  quis iuvaret expetendis his, te elit voluptua dignissim per,
+                  habeo iusto primis ea eam.
+                </p>
+              </div>
+            </div>
+            <div class="containerTime left">
+              <div class="contentTimeLine">
+                <h2>2011</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                  quis iuvaret expetendis his, te elit voluptua dignissim per,
+                  habeo iusto primis ea eam.
+                </p>
+              </div>
+            </div>
+            <div class="containerTime right">
+              <div class="contentTimeLine">
+                <h2>2007</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                  quis iuvaret expetendis his, te elit voluptua dignissim per,
+                  habeo iusto primis ea eam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </MainLayout>
   );

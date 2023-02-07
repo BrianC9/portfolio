@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   body {
-    @apply bg-neutral text-primary dark:bg-primary dark:text-neutral font-sans;
+    @apply border-2 border-red-600 bg-neutral text-primary dark:bg-primary dark:text-neutral font-sans;
   }
   h1,
   h2,
@@ -31,6 +31,40 @@
   @keyframes blink {
     50% {
       border-color: transparent;
+    }
+  }
+  .timeline {
+    @apply relative mx-auto  max-w-[800px] after:absolute after:inset-y-0 after:left-2/4 after:ml-[-3px] after:w-1.5 after:bg-[#21243D] after:content-[''];
+  }
+
+  .containerTime {
+    @apply relative w-6/12 bg-inherit px-10 py-2.5 after:absolute after:right-[-12px] after:top-[25px] after:z-[1] after:h-[25px] after:w-[25px] after:rounded-full after:border-[3px] after:border-solid after:border-[#4792FC] after:bg-white;
+  }
+
+  .right {
+    @apply left-1/2 after:-left-[.8rem];
+  }
+
+  .contentTimeLine {
+    @apply relative rounded-md bg-[white] p-5;
+  }
+
+  @media screen and (max-width: 768px) {
+    .timeline::after {
+      @apply left-[31px];
+    }
+
+    .containerTime {
+      @apply w-full pl-[70px] pr-[25px];
+    }
+
+    .left::after,
+    .right::after {
+      @apply left-[18px];
+    }
+
+    .right {
+      @apply left-0;
     }
   }
 }
