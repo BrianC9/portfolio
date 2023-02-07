@@ -8,14 +8,13 @@
 
 import Logo from "./Logo";
 import Link from "next/link";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Hamburguer from "./Hamburguer";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
-
+  const { asPath } = useRouter();
+  console.log(asPath);
   const handleOpen = () => {
     setIsOpen(!isOpen);
   };
@@ -26,17 +25,35 @@ function Header() {
         <nav>
           <ul className="hidden md:flex">
             <Link href={"/aboutme"}>
-              <li className="cursor-pointer uppercase list-none  text-secondary font-extrabold lg:ml-20 w-36 text-center md:py-1 hover:bg-secondary hover:text-white transition-all duration-200  hover:rounded-full">
+              <li
+                className={
+                  asPath === "/aboutme"
+                    ? "cursor-pointer uppercase list-none   font-extrabold lg:ml-20 w-36 text-center md:py-1 bg-secondary text-white transition-all duration-200 rounded-full"
+                    : "cursor-pointer uppercase list-none  text-secondary font-extrabold lg:ml-20 w-36 text-center md:py-1 hover:bg-secondary hover:text-white transition-all duration-200 hover:rounded-full"
+                }
+              >
                 About me
               </li>
             </Link>
             <Link href={"/projects"}>
-              <li className="cursor-pointer uppercase list-none  text-secondary font-extrabold lg:ml-20 w-36 text-center md:py-1 hover:bg-secondary hover:text-white transition-all duration-200  hover:rounded-full">
+              <li
+                className={
+                  asPath.split("/")[1] === "projects"
+                    ? "cursor-pointer uppercase list-none   font-extrabold lg:ml-20 w-36 text-center md:py-1 bg-secondary text-white transition-all duration-200 rounded-full"
+                    : "cursor-pointer uppercase list-none  text-secondary font-extrabold lg:ml-20 w-36 text-center md:py-1  hover:bg-secondary hover:text-white transition-all duration-200 hover:rounded-full"
+                }
+              >
                 Projects
               </li>
             </Link>
             <Link href={"/contact"}>
-              <li className="cursor-pointer uppercase list-none  text-secondary font-extrabold lg:ml-20 w-36 text-center md:py-1 hover:bg-secondary hover:text-white transition-all duration-200  hover:rounded-full">
+              <li
+                className={
+                  asPath === "/contact"
+                    ? "cursor-pointer uppercase list-none   font-extrabold lg:ml-20 w-36 text-center md:py-1 bg-secondary text-white transition-all duration-200 rounded-full"
+                    : "cursor-pointer uppercase list-none  text-secondary font-extrabold lg:ml-20 w-36 text-center md:py-1 hover:bg-secondary hover:text-white transition-all duration-200 hover:rounded-full"
+                }
+              >
                 Contact
               </li>
             </Link>
@@ -69,22 +86,46 @@ function Header() {
               <div id="mavbar-mobile" className=" py-6 ">
                 <ul className="flex flex-col items-center gap-10">
                   <Link href={"/"}>
-                    <li className=" active:text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200 ">
+                    <li
+                      className={
+                        asPath === "/"
+                          ? "text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200"
+                          : "active:text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200 "
+                      }
+                    >
                       Home
                     </li>
                   </Link>
                   <Link href={"/aboutme"}>
-                    <li className=" active:text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200 ">
+                    <li
+                      className={
+                        asPath === "/aboutme"
+                          ? "text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200"
+                          : "active:text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200 "
+                      }
+                    >
                       About me
                     </li>
                   </Link>
                   <Link href={"/projects"}>
-                    <li className="sm:text-4xl active:text-secondary cursor-pointer uppercase list-none text-3xl  font-bold text-center md:py-1  transition-all duration-200 ">
+                    <li
+                      className={
+                        asPath.split("/")[1] === "projects"
+                          ? "text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200"
+                          : "active:text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200 "
+                      }
+                    >
                       Projects
                     </li>
                   </Link>
                   <Link href={"/contact"}>
-                    <li className="sm:text-4xl active:text-secondary cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1  transition-all duration-200 ">
+                    <li
+                      className={
+                        asPath === "/contact"
+                          ? "text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200"
+                          : "active:text-secondary sm:text-4xl cursor-pointer uppercase list-none text-3xl font-bold  text-center md:py-1 transition-all duration-200 "
+                      }
+                    >
                       Contact
                     </li>
                   </Link>

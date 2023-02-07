@@ -19,8 +19,10 @@ function Homepage() {
           <h1 className="typewritter-animation">
             Hi I`m <span className="text-secondary">Bryan</span>
           </h1>
-          <span className="animate-waving-hand absolute ml-1 sm:ml-3">👋🏼</span>
-          <span className="animate-waving-hand  ml-[2.5rem] md:ml-14 absolute">
+          <span className="animate-waving-hand absolute ml-1 sm:ml-3 md:ml-0">
+            👋🏼
+          </span>
+          <span className="animate-waving-hand  ml-[2.5rem] sm:ml-14 md:ml-10 absolute">
             👋🏼
           </span>
         </div>
