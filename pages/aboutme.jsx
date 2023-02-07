@@ -23,7 +23,7 @@ function Aboutme() {
   const StyleIcon = "h-20 w-fit";
   return (
     <MainLayout page={"About me"}>
-      <main className="max-w[85ch] px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30">
+      <main className="px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30">
         <section
           id="heading"
           className="grid gap-8 grid-cols-1 place-content-center place-items-center w-2/4 mx-auto"

@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   body {
-    @apply border-2 border-red-600 bg-neutral text-primary dark:bg-primary dark:text-neutral font-sans;
+    @apply bg-neutral text-primary dark:bg-primary dark:text-neutral font-sans;
   }
   h1,
   h2,

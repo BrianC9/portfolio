@@ -19,8 +19,8 @@ function Header() {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-full sticky top-0 z-50 bg-neutral shadow-lg ">
-      <div className="flex justify-between items-center h-full  ">
+    <header className="w-full sticky top-0 z-50 bg-neutral shadow-lg h-20 px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30 mb-10 md:mb-20">
+      <div className="flex justify-between items-center  h-full  ">
         <Logo />
         <nav>
           <ul className="hidden md:flex">
@@ -70,10 +70,10 @@ function Header() {
           }
           id="mobile-menu"
         >
-          <div className="bg-neutral   h-screen w-full px-5 sm:px-10 md:px-15">
+          <div className="bg-neutral   h-screen  p-5 sm:px-10 md:px-15">
             <div
               id="header-mobile"
-              className="flex items-center content-center justify-between h-20 sm:h-24"
+              className="flex items-center content-center justify-between "
             >
               <Logo />
             </div>
