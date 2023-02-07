@@ -2,13 +2,28 @@ import MainLayout from "@/components/MainLayout";
 import Image from "next/image";
 import React from "react";
 import jobs from "../public/assets/json/jobs.json";
+import {
+  SiSpring,
+  SiSpringboot,
+  SiJavascript,
+  SiTypescript,
+  SiExpress,
+  SiPostgresql,
+  SiMysql,
+  SiMongodb,
+} from "react-icons/si";
+import { FaReact, FaGithub, FaNodeJs, FaJava } from "react-icons/fa";
 
 function Aboutme() {
   //Handle the loading state
   console.log(jobs);
+  const PropsIcon = {
+    size: "auto",
+  };
+  const StyleIcon = "h-20 w-fit";
   return (
     <MainLayout page={"About me"}>
-      <main className="max-w[85ch]">
+      <main className="max-w[85ch] px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30">
         <section
           id="heading"
           className="grid gap-8 grid-cols-1 place-content-center place-items-center w-2/4 mx-auto"
@@ -58,7 +73,10 @@ function Aboutme() {
             , where I can make a meaningful contribution.
           </p>
         </section>
-        <section id="skills" className="grid gap-8 my-10 max-w-[85ch] mx-auto ">
+        <section
+          id="work-experience"
+          className="grid gap-8 my-10 max-w-[85ch] mx-auto "
+        >
           <h2 className="text-3xl">
             Work <span className="text-secondary">experience</span>
           </h2>
@@ -85,7 +103,24 @@ function Aboutme() {
             </div>
           ))}
         </section>
-        <section id="work-experience"></section>
+        <section id="skills" className="grid gap-8 my-6 max-w-[85ch] mx-auto ">
+          <h2 className="text-3xl text-secondary">Skills</h2>
+          <h3 className="text-xl">Technologies I have worked with:</h3>
+          <div className="grid grid-cols-3 gap-5 place-items-center ">
+            <SiJavascript {...PropsIcon} className={StyleIcon} />
+            <FaReact {...PropsIcon} className={StyleIcon} />
+            <SiTypescript {...PropsIcon} className={StyleIcon} />
+            <FaNodeJs {...PropsIcon} className={StyleIcon} />
+            <SiExpress {...PropsIcon} className={StyleIcon} />
+            <FaJava {...PropsIcon} className={StyleIcon} />
+            <SiSpring {...PropsIcon} className={StyleIcon} />
+            <SiSpringboot {...PropsIcon} className={StyleIcon} />
+            <SiPostgresql {...PropsIcon} className={StyleIcon} />
+            <SiMysql {...PropsIcon} className={StyleIcon} />
+            <SiMongodb {...PropsIcon} className={StyleIcon} />
+            <FaGithub {...PropsIcon} className={StyleIcon} />
+          </div>
+        </section>
         <section id="education"></section>
       </main>
     </MainLayout>
