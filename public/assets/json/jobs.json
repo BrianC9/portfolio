@@ -3,6 +3,14 @@
     "id": 1,
     "role": "Software developer",
     "company": "Devoteam",
+    "duties": {
+      "en": [
+        "Maintenance and development of a banking application.",
+        "I learned and developed microservices with Spring Boot.",
+        "I implemented UI designs with React."
+      ],
+      "es": []
+    },
     "current": true,
     "startMonth": {
       "en": "Sept",

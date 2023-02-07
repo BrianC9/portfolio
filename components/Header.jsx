@@ -19,7 +19,7 @@ function Header() {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-full sticky h-20 sm:h-24 top-0 z-50  ">
+    <header className="w-full sticky px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30 h-20 sm:h-24 top-0 z-50 backdrop-blur-md	 ">
       <div className="flex justify-between items-center h-full  ">
         <Logo />
         <nav>
@@ -28,8 +28,8 @@ function Header() {
               <li
                 className={
                   asPath === "/aboutme"
-                    ? "cursor-pointer uppercase list-none   font-extrabold lg:ml-20 w-36 text-center md:py-1 bg-secondary text-white transition-all duration-200 rounded-full"
-                    : "cursor-pointer uppercase list-none  text-secondary font-extrabold lg:ml-20 w-36 text-center md:py-1 hover:bg-secondary hover:text-white transition-all duration-200 hover:rounded-full"
+                    ? "cursor-pointer uppercase list-none   font-bold lg:ml-20 w-36 text-center md:py-1 bg-secondary text-white transition-all duration-200 rounded-full"
+                    : "cursor-pointer uppercase list-none  text-secondary font-bold lg:ml-20 w-36 text-center md:py-1 hover:bg-secondary hover:text-white transition-all duration-200 hover:rounded-full"
                 }
               >
                 About me
@@ -39,8 +39,8 @@ function Header() {
               <li
                 className={
                   asPath.split("/")[1] === "projects"
-                    ? "cursor-pointer uppercase list-none   font-extrabold lg:ml-20 w-36 text-center md:py-1 bg-secondary text-white transition-all duration-200 rounded-full"
-                    : "cursor-pointer uppercase list-none  text-secondary font-extrabold lg:ml-20 w-36 text-center md:py-1  hover:bg-secondary hover:text-white transition-all duration-200 hover:rounded-full"
+                    ? "cursor-pointer uppercase list-none   font-bold lg:ml-20 w-36 text-center md:py-1 bg-secondary text-white transition-all duration-200 rounded-full"
+                    : "cursor-pointer uppercase list-none  text-secondary font-bold lg:ml-20 w-36 text-center md:py-1  hover:bg-secondary hover:text-white transition-all duration-200 hover:rounded-full"
                 }
               >
                 Projects
@@ -50,8 +50,8 @@ function Header() {
               <li
                 className={
                   asPath === "/contact"
-                    ? "cursor-pointer uppercase list-none   font-extrabold lg:ml-20 w-36 text-center md:py-1 bg-secondary text-white transition-all duration-200 rounded-full"
-                    : "cursor-pointer uppercase list-none  text-secondary font-extrabold lg:ml-20 w-36 text-center md:py-1 hover:bg-secondary hover:text-white transition-all duration-200 hover:rounded-full"
+                    ? "cursor-pointer uppercase list-none   font-bold lg:ml-20 w-36 text-center md:py-1 bg-secondary text-white transition-all duration-200 rounded-full"
+                    : "cursor-pointer uppercase list-none  text-secondary font-bold lg:ml-20 w-36 text-center md:py-1 hover:bg-secondary hover:text-white transition-all duration-200 hover:rounded-full"
                 }
               >
                 Contact
@@ -65,7 +65,7 @@ function Header() {
         <div
           className={
             isOpen
-              ? "md:hidden fixed left-0 top-0 w-full h-screen transition-all  ease-in-out duration-300 bg-black/60"
+              ? "md:hidden overflow-hidden fixed left-0 top-0 w-full h-screen transition-all  ease-in-out duration-300 bg-black/60"
               : " fixed left-[-100%] top-0 transition-all  ease-in-out duration-300"
           }
           id="mobile-menu"

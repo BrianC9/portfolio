@@ -9,7 +9,7 @@ function Homepage() {
         alt="Myself portrait"
         width={400}
         height={400}
-        className="rounded-full sm:w-2/4 md:w-[75%]"
+        className="rounded-full sm:w-2/4 md:w-[75%] lg:w-[60%]"
         priority={true}
         blurDataURL={"/assets/images/foto-perfil.jpg"}
         placeholder="blur"
