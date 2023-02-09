@@ -16,7 +16,10 @@ const project = {
     en: "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
     es: "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
   },
-
+  links: {
+    github: "https://github.com/BrianC9/af-store-remix",
+    preview: "https://af-store-remix.vercel.app/",
+  },
   technologies: [
     {
       id: "react",
@@ -64,7 +67,7 @@ const project = {
 function Project() {
   // const router = useRouter();
   // const { projectId } = router.query;
-  const { title, longDescription, technologies, images } = project;
+  const { title, longDescription, technologies, images, links } = project;
   return (
     <MainLayout page={title}>
       <main className="px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30 max-w-[85ch] mx-auto">
@@ -105,10 +108,17 @@ function Project() {
           </div>
         </section>
         <section className="my-6 max-w-[85ch] mx-auto">
-          <div>
-            <h2 className="text-2xl  ">View Project</h2>
-            <h2 className="text-2xl  ">Review Code</h2>
+          <div className=" gap-6 flex flex-col sm:flex-row">
+            <a href={links.preview} className="flex items-center gap-2">
+              <h2 className="text-2xl ">View project</h2>
+              {iconResolver("redirect", 22, "redirect")}
+            </a>
+            <a href={links.github} className="flex items-center gap-2">
+              <h2 className="text-2xl inline-block ">Review code</h2>
+              {iconResolver("github", 22, "redirect")}
+            </a>
           </div>
+
           <Slider slides={images.collection} />
         </section>
       </main>

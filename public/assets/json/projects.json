@@ -123,7 +123,10 @@
       "en": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
       "es": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS."
     },
-
+    "links": {
+      "github": "https://github.com/BrianC9/af-store-remix",
+      "preview": "https://af-store-remix.vercel.app/"
+    },
     "technologies": [
       {
         "id": "react",
