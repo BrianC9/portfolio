@@ -34,7 +34,7 @@ function Aboutme() {
           className="grid gap-8 my-6 max-w-[85ch] mx-auto text-justify"
         >
           <h2 className="text-2xl">
-            Who am <span className="text-secondary">I?</span>{" "}
+            Who am <span className="text-secondary">I?</span>
           </h2>
           <p>
             I am <strong>highly passionate about technology</strong> with
@@ -100,7 +100,7 @@ function Aboutme() {
               {personalInfo.skills.technologies.map((tech) => (
                 <div key={tech.id}>
                   {iconResolver(tech.id, 80, tech.name)}
-                  <p className="text-center">{tech.name}</p>
+                  <p className="text-center font-semibold">{tech.name}</p>
                 </div>
               ))}
             </div>

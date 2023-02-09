@@ -3,16 +3,19 @@ import { iconResolver } from "@/utils/iconResolver";
 import React from "react";
 
 function ProjectCard({ project }) {
-  const { slug, title, description, technologies, images, category } = project;
+  const { slug, title, shortDescription, technologies, images, category } =
+    project;
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <div className="c-card block overflow-hidden rounded-lg bg-white shadow-md hover:shadow-xl">
         <div className="relative overflow-hidden pb-60">
-          <img
-            className="absolute inset-0 h-full w-full object-cover"
-            src={images.cover}
-            alt="sa"
-          />
+          <a href={`/projects/${slug}`}>
+            <img
+              className="absolute inset-0 h-full w-full object-cover"
+              src={images.cover}
+              alt={`Go to ${title} poject page`}
+            />
+          </a>
         </div>
         <div className="p-4 ">
           <span className="inline-block rounded-full bg-sky-600 p-3 text-xs font-semibold uppercase leading-none tracking-wide text-white">
@@ -21,10 +24,13 @@ function ProjectCard({ project }) {
           <h2 className="mt-2 mb-2 font-bold">{title}</h2>
           <div className="my-3 flex gap-1 ">
             {technologies.map((tech) => (
-              <div key={tech.id}>{iconResolver(tech.id, 35, tech.name)}</div>
+              <div key={tech.id}>
+                {iconResolver(tech.id, 80, tech.name)}
+                <p className="text-center font-semibold">{tech.name}</p>
+              </div>
             ))}
           </div>
-          <p className="text-sm">{description.en}</p>
+          <p className="text-sm">{shortDescription.en}</p>
         </div>
         <div className="border-t border-b p-4 text-xs text-gray-700 ">
           <a href={`/projects/${slug}`} className="flex gap-1">

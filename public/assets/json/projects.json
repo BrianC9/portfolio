@@ -3,9 +3,13 @@
     "slug": "afstore",
     "title": "AF Store",
     "category": "fullstack",
-    "description": {
+    "shortDescription": {
       "en": "A Fullstack ecommerce app developed with Remix and Strapi",
       "es": "Aplicación fullstack desarrollada con Remix y Strapi"
+    },
+    "longDescription": {
+      "en": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
+      "es": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS."
     },
 
     "technologies": [
@@ -55,9 +59,13 @@
     "slug": "zxcv",
     "title": "AF Store",
     "category": "fullstack",
-    "description": {
+    "shortDescription": {
       "en": "A Fullstack ecommerce app developed with Remix and Strapi",
       "es": "Aplicación fullstack desarrollada con Remix y Strapi"
+    },
+    "longDescription": {
+      "en": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
+      "es": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS."
     },
 
     "technologies": [
@@ -107,9 +115,13 @@
     "slug": "qwer",
     "title": "AF Store",
     "category": "backend",
-    "description": {
+    "shortDescription": {
       "en": "A Fullstack ecommerce app developed with Remix and Strapi",
       "es": "Aplicación fullstack desarrollada con Remix y Strapi"
+    },
+    "longDescription": {
+      "en": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
+      "es": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS."
     },
 
     "technologies": [
@@ -159,9 +171,13 @@
     "slug": "asdw",
     "title": "AF Store",
     "category": "frontend",
-    "description": {
+    "shortDescription": {
       "en": "A Fullstack ecommerce app developed with Remix and Strapi",
       "es": "Aplicación fullstack desarrollada con Remix y Strapi"
+    },
+    "longDescription": {
+      "en": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
+      "es": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS."
     },
 
     "technologies": [

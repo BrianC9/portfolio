@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import Head from "next/head";
-import { Rubik } from "@next/font/google";
-const rubik = Rubik({
+import { Nunito } from "@next/font/google";
+const rubik = Nunito({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
