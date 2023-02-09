@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import MainLayout from "@/components/MainLayout";
 import { iconResolver } from "@/utils/iconResolver";
+import Slider from "@/components/Slider";
 const project = {
   slug: "afstore",
   title: "AF Store",
@@ -43,14 +44,14 @@ const project = {
         },
       },
       {
-        src: "https://picsum.photos/1280/720",
+        src: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
         alt: {
           en: "Homepage from AF Store",
           es: "Página de incio de AF Store",
         },
       },
       {
-        src: "https://picsum.photos/1280/720",
+        src: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
         alt: {
           en: "Homepage from AF Store",
           es: "Página de incio de AF Store",
@@ -63,7 +64,7 @@ const project = {
 function Project() {
   // const router = useRouter();
   // const { projectId } = router.query;
-  const { title, longDescription, technologies } = project;
+  const { title, longDescription, technologies, images } = project;
   return (
     <MainLayout page={title}>
       <main className="px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30 max-w-[85ch] mx-auto">
@@ -102,6 +103,13 @@ function Project() {
               </div>
             ))}
           </div>
+        </section>
+        <section className="my-6 max-w-[85ch] mx-auto">
+          <div>
+            <h2 className="text-2xl  ">View Project</h2>
+            <h2 className="text-2xl  ">Review Code</h2>
+          </div>
+          <Slider slides={images.collection} />
         </section>
       </main>
     </MainLayout>

@@ -95,16 +95,14 @@ function Aboutme() {
         <section id="skills" className="grid gap-8 my-6 max-w-[85ch] mx-auto ">
           <h2 className="text-2xl text-secondary">Skills</h2>
           <h3 className="text-xl">Technologies I have worked with:</h3>
-          <Suspense fallback={"Loading..."}>
-            <div className="grid grid-cols-3 gap-5 place-items-center ">
-              {personalInfo.skills.technologies.map((tech) => (
-                <div key={tech.id}>
-                  {iconResolver(tech.id, 80, tech.name)}
-                  <p className="text-center font-semibold">{tech.name}</p>
-                </div>
-              ))}
-            </div>
-          </Suspense>
+          <div className="grid grid-cols-3 gap-5 place-items-center ">
+            {personalInfo.skills.technologies.map((tech) => (
+              <div key={tech.id}>
+                {iconResolver(tech.id, 80, tech.name)}
+                <p className="text-center font-semibold">{tech.name}</p>
+              </div>
+            ))}
+          </div>
         </section>
         <section
           id="education"
