@@ -7,21 +7,21 @@ function ProjectCard({ project }) {
   return (
     <div className="w-full ">
       <div className="c-card block overflow-hidden rounded-lg bg-white shadow-md hover:shadow-xl">
-        <div className="relative overflow-hidden pb-48">
+        <div className="relative overflow-hidden pb-60">
           <img
             className="absolute inset-0 h-full w-full object-cover"
             src={images.cover}
             alt="sa"
           />
         </div>
-        <div className="p-4">
+        <div className="p-4 ">
           <span className="inline-block rounded-full bg-sky-600 p-3 text-xs font-semibold uppercase leading-none tracking-wide text-white">
             {category}
           </span>
           <h2 className="mt-2 mb-2 font-bold">{title}</h2>
-          <div className="my-3 flex ">
+          <div className="my-3 flex gap-1 ">
             {technologies.map((tech) => (
-              <div key={tech.id}>{iconResolver(tech.id, 35)}</div>
+              <div key={tech.id}>{iconResolver(tech.id, 35, tech.name)}</div>
             ))}
           </div>
           <p className="text-sm">{description.en}</p>

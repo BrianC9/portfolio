@@ -36,7 +36,7 @@ function Index() {
           <h2 className="text-2xl ">
             Choose a <span className="text-secondary">category:</span>
           </h2>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap my-3">
             <button className="tag" value="all" onClick={handleCategory}>
               All
             </button>
@@ -52,7 +52,7 @@ function Index() {
           </div>
         </section>
         <section className="my-6 max-w-[85ch] mx-auto">
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5">
+          <div className="grid lg:grid-cols-2 sm:grid-cols-2 gap-5">
             {category === "all"
               ? projects.map((project) => (
                   <ProjectCard key={project.slug} project={project} />

@@ -3,7 +3,7 @@ import Image from "next/image";
 import SocialIcons from "./SocialIcons";
 function Homepage() {
   return (
-    <main className="grid grid-cols-1 gap-8 place-items-center place-content-center w-full  md:grid-cols-2 h-5/6">
+    <main className="grid grid-cols-1 gap-8 place-items-center place-content-center px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30 md:grid-cols-2 h-5/6">
       <Image
         src={"/assets/images/foto-perfil.jpg"}
         alt="Myself portrait"

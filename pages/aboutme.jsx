@@ -99,7 +99,7 @@ function Aboutme() {
             <div className="grid grid-cols-3 gap-5 place-items-center ">
               {personalInfo.skills.technologies.map((tech) => (
                 <div key={tech.id}>
-                  {iconResolver(tech.id, 80)}
+                  {iconResolver(tech.id, 80, tech.name)}
                   <p className="text-center">{tech.name}</p>
                 </div>
               ))}

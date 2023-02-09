@@ -22,7 +22,7 @@
     transform: scale(1.05);
   }
   .tag {
-    @apply bg-white w-fit px-4 py-2 rounded-lg m-2 font-extrabold active:text-secondary md:hover:text-secondary;
+    @apply bg-white w-fit px-4 py-2 rounded-lg m-2 font-extrabold  hover:text-white hover:bg-secondary;
   }
   .typewritter-animation {
     animation: typing 2s steps(11), blink 1s infinite step-end alternate;
