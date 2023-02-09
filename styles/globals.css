@@ -19,7 +19,7 @@
     animation: typing 2s steps(11), blink 1s infinite step-end alternate;
     display: inline-block;
     white-space: nowrap;
-    border-right: 4px solid rgb(71 146 252);
+    @apply border-r-4 border-secondary;
     width: 11ch;
     overflow: hidden;
   }

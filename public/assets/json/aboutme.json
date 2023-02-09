@@ -1,0 +1,21 @@
+{
+  "skills": {
+    "technologies": [
+      { "id": "react", "name": "React" },
+      { "id": "spring", "name": "Spring" },
+      { "id": "springboot", "name": "Springboot" },
+      { "id": "javascript", "name": "Javascript" },
+      { "id": "typescript", "name": "Typescript" },
+      { "id": "express", "name": "Express" },
+      { "id": "postgresql", "name": "Postgresql" },
+      { "id": "mysql", "name": "Mysql" },
+      { "id": "mongodb", "name": "Mongodb" },
+      { "id": "nextjs", "name": "Next JS" },
+      { "id": "github", "name": "Github" },
+      { "id": "nodejs", "name": "Nodejs" },
+      { "id": "java", "name": "Java" }
+    ],
+    "soft-skills": [{ "TODO": "TODO" }]
+  },
+  "education": [{}, {}]
+}

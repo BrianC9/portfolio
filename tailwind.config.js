@@ -9,9 +9,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#21243D",
-        secondary: "#4792FC",
-        neutral: "#EEF1FA",
+        primary: "#141D2C",
+        secondary: "#0EA5E9",
+        neutral: "#E6ECF3",
       },
       fontFamily: {
         sans: ["var(--font-rubik)", "sans-serif"],

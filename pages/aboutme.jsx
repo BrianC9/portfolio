@@ -2,25 +2,14 @@ import MainLayout from "@/components/MainLayout";
 import Image from "next/image";
 import React from "react";
 import jobs from "../public/assets/json/jobs.json";
-import {
-  SiSpring,
-  SiSpringboot,
-  SiJavascript,
-  SiTypescript,
-  SiExpress,
-  SiPostgresql,
-  SiMysql,
-  SiMongodb,
-} from "react-icons/si";
-import { FaReact, FaGithub, FaNodeJs, FaJava } from "react-icons/fa";
+import personalInfo from "../public/assets/json/aboutme.json";
+
+import { iconResolver } from "@/utils/iconResolver.js";
 
 function Aboutme() {
   //Handle the loading state
   console.log(jobs);
-  const PropsIcon = {
-    size: "auto",
-  };
-  const StyleIcon = "h-20 w-fit";
+
   return (
     <MainLayout page={"About me"}>
       <main className="px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30">
@@ -107,18 +96,12 @@ function Aboutme() {
           <h2 className="text-3xl text-secondary">Skills</h2>
           <h3 className="text-xl">Technologies I have worked with:</h3>
           <div className="grid grid-cols-3 gap-5 place-items-center ">
-            <SiJavascript {...PropsIcon} className={StyleIcon} />
-            <FaReact {...PropsIcon} className={StyleIcon} />
-            <SiTypescript {...PropsIcon} className={StyleIcon} />
-            <FaNodeJs {...PropsIcon} className={StyleIcon} />
-            <SiExpress {...PropsIcon} className={StyleIcon} />
-            <FaJava {...PropsIcon} className={StyleIcon} />
-            <SiSpring {...PropsIcon} className={StyleIcon} />
-            <SiSpringboot {...PropsIcon} className={StyleIcon} />
-            <SiPostgresql {...PropsIcon} className={StyleIcon} />
-            <SiMysql {...PropsIcon} className={StyleIcon} />
-            <SiMongodb {...PropsIcon} className={StyleIcon} />
-            <FaGithub {...PropsIcon} className={StyleIcon} />
+            {personalInfo.skills.technologies.map((tech) => (
+              <div key={tech.id}>
+                {iconResolver(tech.id, tech.name)}
+                <p className="text-center">{tech.name}</p>
+              </div>
+            ))}
           </div>
         </section>
         <section
@@ -127,9 +110,9 @@ function Aboutme() {
         >
           <h2 className="text-3xl text-secondary">Education</h2>
 
-          <div class="timeline">
-            <div class="containerTime left">
-              <div class="contentTimeLine">
+          <div className="timeline">
+            <div className="containerTime left">
+              <div className="contentTimeLine">
                 <h2>2017</h2>
                 <p>
                   Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
@@ -139,8 +122,8 @@ function Aboutme() {
                 </p>
               </div>
             </div>
-            <div class="containerTime right">
-              <div class="contentTimeLine">
+            <div className="containerTime right">
+              <div className="contentTimeLine">
                 <h2>2016</h2>
                 <p>
                   Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
@@ -157,8 +140,8 @@ function Aboutme() {
                 </p>
               </div>
             </div>
-            <div class="containerTime left">
-              <div class="contentTimeLine">
+            <div className="containerTime left">
+              <div className="contentTimeLine">
                 <h2>2015</h2>
                 <p>
                   Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
@@ -175,8 +158,8 @@ function Aboutme() {
                 </p>
               </div>
             </div>
-            <div class="containerTime right">
-              <div class="contentTimeLine">
+            <div className="containerTime right">
+              <div className="contentTimeLine">
                 <h2>2012</h2>
                 <p>
                   Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
@@ -193,8 +176,8 @@ function Aboutme() {
                 </p>
               </div>
             </div>
-            <div class="containerTime left">
-              <div class="contentTimeLine">
+            <div className="containerTime left">
+              <div className="contentTimeLine">
                 <h2>2011</h2>
                 <p>
                   Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
@@ -204,8 +187,8 @@ function Aboutme() {
                 </p>
               </div>
             </div>
-            <div class="containerTime right">
-              <div class="contentTimeLine">
+            <div className="containerTime right">
+              <div className="contentTimeLine">
                 <h2>2007</h2>
                 <p>
                   Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
