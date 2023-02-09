@@ -8,10 +8,11 @@ import {
   SiMysql,
   SiMongodb,
   SiNextdotjs,
+  SiTailwindcss,
 } from "react-icons/si";
 import { FaReact, FaGithub, FaNodeJs, FaJava } from "react-icons/fa";
 
-export const iconResolver = (id, name, color) => {
+export const iconResolver = (id, name) => {
   const IconsMap = new Map();
   const StyleIcons = "h-20";
 
@@ -28,9 +29,15 @@ export const iconResolver = (id, name, color) => {
   IconsMap.set("github", <FaGithub size={"auto"} />);
   IconsMap.set("nodejs", <FaNodeJs color="#21A366" size={"auto"} />);
   IconsMap.set("java", <FaJava color="#d98b1b" size={"auto"} />);
+  IconsMap.set("tailwind", <SiTailwindcss color="#38BDF8" size={"auto"} />);
+
   return (
-    <div className={StyleIcons}>{IconsMap.get(id)}</div> ?? (
-      <h2 className="font-black w-fit text-white bg-primary p-3 rounded-md">
+    (
+      <div className={StyleIcons} title={name}>
+        {IconsMap.get(id)}
+      </div>
+    ) ?? (
+      <h2 className="font-black  text-white bg-primary p-3 rounded-md">
         {id.length > 4 ? id.substring(0, 3).toUpperCase() : id.toUpperCase()}
       </h2>
     )

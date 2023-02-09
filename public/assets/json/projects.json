@@ -2,6 +2,152 @@
   {
     "slug": "afstore",
     "title": "AF Store",
+    "category": "fullstack",
+    "description": {
+      "en": "A Fullstack ecommerce app developed with Remix and Strapi",
+      "es": "Aplicación fullstack desarrollada con Remix y Strapi"
+    },
+
+    "technologies": [
+      {
+        "id": "react",
+        "name": "React JS"
+      },
+
+      {
+        "id": "tailwind",
+        "name": "Tailwind CSS"
+      },
+      {
+        "id": "nextjs",
+        "name": "Next"
+      }
+    ],
+    "images": {
+      "cover": "https://picsum.photos/1280/720",
+      "collection": [
+        {
+          "src": "https://picsum.photos/1280/720",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        },
+        {
+          "src": "https://picsum.photos/1280/720",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        },
+        {
+          "src": "https://picsum.photos/1280/720",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "slug": "zxcv",
+    "title": "AF Store",
+    "category": "fullstack",
+    "description": {
+      "en": "A Fullstack ecommerce app developed with Remix and Strapi",
+      "es": "Aplicación fullstack desarrollada con Remix y Strapi"
+    },
+
+    "technologies": [
+      {
+        "id": "react",
+        "name": "React JS"
+      },
+
+      {
+        "id": "tailwind",
+        "name": "Tailwind CSS"
+      }
+    ],
+    "images": {
+      "cover": "https://picsum.photos/1280/720",
+      "collection": [
+        {
+          "src": "https://picsum.photos/1280/720",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        },
+        {
+          "src": "https://picsum.photos/1280/720",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        },
+        {
+          "src": "https://picsum.photos/1280/720",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "slug": "qwer",
+    "title": "AF Store",
+    "category": "backend",
+    "description": {
+      "en": "A Fullstack ecommerce app developed with Remix and Strapi",
+      "es": "Aplicación fullstack desarrollada con Remix y Strapi"
+    },
+
+    "technologies": [
+      {
+        "id": "react",
+        "name": "React JS"
+      },
+
+      {
+        "id": "tailwind",
+        "name": "Tailwind CSS"
+      }
+    ],
+    "images": {
+      "cover": "https://picsum.photos/1280/720",
+      "collection": [
+        {
+          "src": "https://picsum.photos/1280/720",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        },
+        {
+          "src": "https://picsum.photos/1280/720",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        },
+        {
+          "src": "https://picsum.photos/1280/720",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "slug": "asdw",
+    "title": "AF Store",
+    "category": "frontend",
     "description": {
       "en": "A Fullstack ecommerce app developed with Remix and Strapi",
       "es": "Aplicación fullstack desarrollada con Remix y Strapi"

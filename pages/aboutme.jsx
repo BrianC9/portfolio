@@ -1,13 +1,13 @@
+// TODO:
 import MainLayout from "@/components/MainLayout";
 import Image from "next/image";
-import React from "react";
+import React, { Suspense } from "react";
 import jobs from "../public/assets/json/jobs.json";
 import personalInfo from "../public/assets/json/aboutme.json";
 
 import { iconResolver } from "@/utils/iconResolver.js";
 
 function Aboutme() {
-  //Handle the loading state
   console.log(jobs);
 
   return (
@@ -15,9 +15,9 @@ function Aboutme() {
       <main className="px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30">
         <section
           id="heading"
-          className="grid gap-8 grid-cols-1 place-content-center place-items-center w-2/4 mx-auto"
+          className="grid gap-4 grid-cols-1 place-content-center place-items-center w-2/4 mx-auto"
         >
-          <h1 className="text-3xl md:text-4xl uppercase">About me</h1>
+          <h1 className="text-2xl md:text-4xl uppercase">About me</h1>
           <Image
             src={"/assets/images/foto-perfil.jpg"}
             alt="Myself portrait"
@@ -33,7 +33,7 @@ function Aboutme() {
           id="introduction"
           className="grid gap-8 my-6 max-w-[85ch] mx-auto text-justify"
         >
-          <h2 className="text-3xl">
+          <h2 className="text-2xl">
             Who am <span className="text-secondary">I?</span>{" "}
           </h2>
           <p>
@@ -66,7 +66,7 @@ function Aboutme() {
           id="work-experience"
           className="grid gap-8 my-10 max-w-[85ch] mx-auto "
         >
-          <h2 className="text-3xl">
+          <h2 className="text-2xl">
             Work <span className="text-secondary">experience</span>
           </h2>
           {jobs.map((job) => (
@@ -93,22 +93,24 @@ function Aboutme() {
           ))}
         </section>
         <section id="skills" className="grid gap-8 my-6 max-w-[85ch] mx-auto ">
-          <h2 className="text-3xl text-secondary">Skills</h2>
+          <h2 className="text-2xl text-secondary">Skills</h2>
           <h3 className="text-xl">Technologies I have worked with:</h3>
-          <div className="grid grid-cols-3 gap-5 place-items-center ">
-            {personalInfo.skills.technologies.map((tech) => (
-              <div key={tech.id}>
-                {iconResolver(tech.id, tech.name)}
-                <p className="text-center">{tech.name}</p>
-              </div>
-            ))}
-          </div>
+          <Suspense fallback={"Loading..."}>
+            <div className="grid grid-cols-3 gap-5 place-items-center ">
+              {personalInfo.skills.technologies.map((tech) => (
+                <div key={tech.id}>
+                  {iconResolver(tech.id, tech.name)}
+                  <p className="text-center">{tech.name}</p>
+                </div>
+              ))}
+            </div>
+          </Suspense>
         </section>
         <section
           id="education"
           className="grid gap-8 my-6 max-w-[85ch] mx-auto "
         >
-          <h2 className="text-3xl text-secondary">Education</h2>
+          <h2 className="text-2xl text-secondary">Education</h2>
 
           <div className="timeline">
             <div className="containerTime left">
