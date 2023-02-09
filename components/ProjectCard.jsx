@@ -21,7 +21,7 @@ function ProjectCard({ project }) {
           <h2 className="mt-2 mb-2 font-bold">{title}</h2>
           <div className="my-3 flex gap-3 ">
             {technologies.map((tech) => (
-              <div key={tech.id}>{iconResolver(tech.id, tech.name)}</div>
+              <div key={tech.id}>{iconResolver(tech.id, 14)}</div>
             ))}
           </div>
           <p className="text-sm">{description.en}</p>
