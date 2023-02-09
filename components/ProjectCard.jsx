@@ -5,7 +5,7 @@ import React from "react";
 function ProjectCard({ project }) {
   const { slug, title, description, technologies, images, category } = project;
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div className="c-card block overflow-hidden rounded-lg bg-white shadow-md hover:shadow-xl">
         <div className="relative overflow-hidden pb-48">
           <img
@@ -19,9 +19,9 @@ function ProjectCard({ project }) {
             {category}
           </span>
           <h2 className="mt-2 mb-2 font-bold">{title}</h2>
-          <div className="my-3 flex gap-3 ">
+          <div className="my-3 flex ">
             {technologies.map((tech) => (
-              <div key={tech.id}>{iconResolver(tech.id, 14)}</div>
+              <div key={tech.id}>{iconResolver(tech.id, 35)}</div>
             ))}
           </div>
           <p className="text-sm">{description.en}</p>

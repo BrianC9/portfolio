@@ -21,7 +21,8 @@
       {
         "id": "nextjs",
         "name": "Next"
-      }
+      },
+      { "id": "java", "name": "Java" }
     ],
     "images": {
       "cover": "https://picsum.photos/1280/720",
@@ -68,7 +69,12 @@
       {
         "id": "tailwind",
         "name": "Tailwind CSS"
-      }
+      },
+      {
+        "id": "nextjs",
+        "name": "Next"
+      },
+      { "id": "java", "name": "Java" }
     ],
     "images": {
       "cover": "https://picsum.photos/1280/720",
@@ -115,7 +121,12 @@
       {
         "id": "tailwind",
         "name": "Tailwind CSS"
-      }
+      },
+      {
+        "id": "nextjs",
+        "name": "Next"
+      },
+      { "id": "java", "name": "Java" }
     ],
     "images": {
       "cover": "https://picsum.photos/1280/720",
@@ -162,7 +173,12 @@
       {
         "id": "tailwind",
         "name": "Tailwind CSS"
-      }
+      },
+      {
+        "id": "nextjs",
+        "name": "Next"
+      },
+      { "id": "java", "name": "Java" }
     ],
     "images": {
       "cover": "https://picsum.photos/1280/720",

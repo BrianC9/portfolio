@@ -1,7 +1,7 @@
 // TODO:
 import MainLayout from "@/components/MainLayout";
 import Image from "next/image";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import jobs from "../public/assets/json/jobs.json";
 import personalInfo from "../public/assets/json/aboutme.json";
 
@@ -99,7 +99,7 @@ function Aboutme() {
             <div className="grid grid-cols-3 gap-5 place-items-center ">
               {personalInfo.skills.technologies.map((tech) => (
                 <div key={tech.id}>
-                  {iconResolver(tech.id, 20)}
+                  {iconResolver(tech.id, 80)}
                   <p className="text-center">{tech.name}</p>
                 </div>
               ))}
