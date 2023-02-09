@@ -109,12 +109,26 @@ function Project() {
         </section>
         <section className="my-6 max-w-[85ch] mx-auto">
           <div className=" gap-6 flex flex-col sm:flex-row">
-            <a href={links.preview} className="flex items-center gap-2">
-              <h2 className="text-2xl ">View project</h2>
+            <a
+              href={links.preview}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2"
+            >
+              <h2 className="text-2xl ">
+                View <span className="text-secondary">project</span>
+              </h2>
               {iconResolver("redirect", 22, "redirect")}
             </a>
-            <a href={links.github} className="flex items-center gap-2">
-              <h2 className="text-2xl inline-block ">Review code</h2>
+            <a
+              href={links.github}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2"
+            >
+              <h2 className="text-2xl inline-block ">
+                Review <span className="text-secondary">code</span>
+              </h2>
               {iconResolver("github", 22, "redirect")}
             </a>
           </div>
