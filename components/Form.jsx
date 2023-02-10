@@ -2,7 +2,7 @@ import React from 'react';
 
 function Form() {
   return (
-    <div className='relative mx-auto w-full max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-xl sm:px-10'>
+    <div className='relative mx-auto w-full max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 rounded-lg sm:rounded-xl sm:px-10'>
       <div className='w-full'>
         <form action=''>
           <div className='relative mt-6'>
@@ -41,9 +41,10 @@ function Form() {
             <textarea
               name='message'
               id='message'
+              rows={3}
               required
               placeholder='Message...'
-              className='peer peer mt-1 w-full border-b-2 border-gray-300 px-0 py-1 placeholder:text-transparent focus:border-primary focus:outline-none'
+              className=' peer peer mt-1 w-full border-b-2 border-gray-300 px-0 py-1 placeholder:text-transparent focus:border-primary focus:outline-none'
             ></textarea>
             <label
               htmlFor='message'

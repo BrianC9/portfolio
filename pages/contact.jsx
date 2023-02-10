@@ -35,7 +35,7 @@ function Contact() {
           <h2 className='text-xl md:text-2xl uppercase'>
             Find me in my <span className='text-secondary'>socials</span>
           </h2>
-          <SocialIcons />{' '}
+          <SocialIcons size={50} />
         </section>
       </main>
     </MainLayout>
