@@ -1,7 +1,6 @@
 // TODO:
 import MainLayout from '@/components/MainLayout';
 import Image from 'next/image';
-import React, { Suspense, useEffect, useState } from 'react';
 import jobs from '../public/assets/json/jobs.json';
 import personalInfo from '../public/assets/json/aboutme.json';
 

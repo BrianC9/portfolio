@@ -5,6 +5,7 @@ import Image from 'next/image';
 import MainLayout from '@/components/MainLayout';
 import { iconResolver } from '@/utils/iconResolver';
 import Slider from '@/components/Slider';
+import Link from 'next/link';
 const project = {
   slug: 'afstore',
   title: 'AF Store',
@@ -119,7 +120,9 @@ function Project() {
               <h2 className='text-2xl '>
                 View <span className='text-secondary'>project</span>
               </h2>
-              {iconResolver('redirect', 22, 'redirect')}
+              <div className='block'>
+                {iconResolver('redirect', 22, 'View project')}
+              </div>
             </a>
             <a
               href={links.github}
@@ -130,11 +133,21 @@ function Project() {
               <h2 className='text-2xl inline-block '>
                 Review <span className='text-secondary'>code</span>
               </h2>
-              {iconResolver('github', 22, 'redirect')}
+              {iconResolver('github', 22, 'Review code')}
             </a>
           </div>
 
           <Slider slides={images.collection} />
+        </section>
+        <section className='py-10'>
+          <Link href={'/projects'}>
+            <h3 className=' '>
+              <span className=''>Go back </span>
+              <span className='hover:underline underline-offset-4 text-secondary transition-all duration-500 ease-in-out'>
+                to projects
+              </span>
+            </h3>
+          </Link>
         </section>
       </main>
     </MainLayout>

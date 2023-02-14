@@ -8,17 +8,17 @@ function Form() {
           <div className='relative mt-6'>
             <input
               type='text'
-              name='username'
-              id='username'
+              name='name'
+              id='nmae'
               required
-              placeholder='Username'
+              placeholder='Name'
               className='peer mt-1 w-full border-b-2 border-gray-300 px-0 py-1 placeholder:text-transparent focus:border-primary focus:outline-none'
             />
             <label
-              htmlFor='username'
+              htmlFor='name'
               className='text-red pointer-events-none absolute top-0 left-0 origin-left -translate-y-1/2 transform text-sm opacity-75 transition-all duration-100 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:pl-0 peer-focus:text-sm peer-focus:text-gray-800'
             >
-              Username
+              Name
             </label>
           </div>
           <div className='relative mt-6'>

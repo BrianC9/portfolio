@@ -24,9 +24,9 @@
       },
       {
         "id": "nextjs",
-        "name": "Next"
+        "name": "Next JS"
       },
-      { "id": "java", "name": "Java" }
+      { "id": "remix", "name": "Remix" }
     ],
     "images": {
       "cover": "https://picsum.photos/1280/720",
