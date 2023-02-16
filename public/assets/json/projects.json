@@ -11,7 +11,10 @@
       "en": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
       "es": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS."
     },
-
+    "links": {
+      "github": "https://github.com/BrianC9/af-store-remix",
+      "preview": "https://af-store-remix.vercel.app/"
+    },
     "technologies": [
       {
         "id": "react",
@@ -29,7 +32,13 @@
       { "id": "remix", "name": "Remix" }
     ],
     "images": {
-      "cover": "https://picsum.photos/1280/720",
+      "cover": {
+        "src": "https://picsum.photos/1280/720",
+        "alt": {
+          "en": "Homepage from AF Store",
+          "es": "Página de incio de AF Store"
+        }
+      },
       "collection": [
         {
           "src": "https://picsum.photos/1280/720",
@@ -56,16 +65,70 @@
     }
   },
   {
-    "slug": "zxcv",
-    "title": "AF Store",
-    "category": "fullstack",
+    "slug": "vetcare",
+    "title": "VetCare Scheduler",
+    "category": "frontend",
     "shortDescription": {
-      "en": "A Fullstack ecommerce app developed with Remix and Strapi",
-      "es": "Aplicación fullstack desarrollada con Remix y Strapi"
+      "en": "VetCare Scheduler is a powerful and easy-to-use appointment management system for veterinary clinics",
+      "es": "El programa VetCare es un sistema de gestión de citas poderoso y fácil de usar para clínicas veterinarias."
     },
     "longDescription": {
-      "en": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
-      "es": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS."
+      "en": "VetCare Scheduler is a powerful and easy-to-use appointment management system for veterinary practices. It allows you to quickly and easily create and manage appointments. With VetCare Scheduler, managing your pet's health care has never been easier.",
+      "es": "El programa VetCare es un sistema de gestión de citas poderoso y fácil de usar para clínicas veterinarias. Te permite crear y administrar citas de forma rápida y sencilla. Con el programa VetCare, la administración de la salud de tu mascota nunca ha sido tan fácil."
+    },
+    "links": {
+      "github": "https://github.com/BrianC9/af-store-remix",
+      "preview": "https://af-store-remix.vercel.app/"
+    },
+    "technologies": [
+      {
+        "id": "react",
+        "name": "React JS"
+      },
+
+      {
+        "id": "netlify",
+        "name": "Netlify"
+      },
+      {
+        "id": "css",
+        "name": "CSS 3"
+      }
+    ],
+    "images": {
+      "cover": {
+        "src": "/assets/images/projects/vetcare01.png",
+        "alt": {
+          "en": "Homepage from VetCare",
+          "es": "Página de incio de VetCare"
+        }
+      },
+      "collection": [
+        {
+          "src": "/assets/images/projects/vetcare01.png",
+          "alt": {
+            "en": "Homepage from VetCare",
+            "es": "Página de incio de VetCare"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "slug": "presupuestapp",
+    "title": "PresupuestAPP",
+    "category": "frontend",
+    "shortDescription": {
+      "en": "Track your expenses and control your budget in a quick and easy way.",
+      "es": "Visualiza tus gastos y controla tu presupuesto de una manera rápida."
+    },
+    "longDescription": {
+      "en": "The purpose of this application is that by means of a form the user can introduce an expense and classify it in different categories. At the same time, the user can also visualise graphically and quickly the percentage of expenditure with respect to a fixed budget.",
+      "es": "El objetivo de esta aplicación es que mediante un formulario el usuario pueda ingresar un gasto y lo pueda clasificar en diferentes categorías. A su vez también que pueda visualizar de forma gráfica y rápida el porcentaje de gasto respecto a un presupuesto fijado."
+    },
+    "links": {
+      "github": "https://github.com/BrianC9/control-presupuesto",
+      "preview": "https://control-presupuesto-kappa.vercel.app/"
     },
 
     "technologies": [
@@ -75,53 +138,58 @@
       },
 
       {
-        "id": "tailwind",
-        "name": "Tailwind CSS"
+        "id": "css",
+        "name": "CSS 3"
       },
       {
-        "id": "nextjs",
-        "name": "Next"
-      },
-      { "id": "java", "name": "Java" }
+        "id": "vercel",
+        "name": "Vercel"
+      }
     ],
     "images": {
-      "cover": "https://picsum.photos/1280/720",
+      "cover": {
+        "src": "/assets/images/projects/presupuestapp01.png",
+        "alt": {
+          "en": "Homepage from PresupuestAPP",
+          "es": "Página de incio de PresupuestAPP"
+        }
+      },
       "collection": [
         {
-          "src": "https://picsum.photos/1280/720",
+          "src": "/assets/images/projects/presupuestapp02.png",
           "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
+            "en": "Homepage from PresupuestAPP",
+            "es": "Página de incio de PresupuestAPP"
           }
         },
         {
-          "src": "https://picsum.photos/1280/720",
+          "src": "/assets/images/projects/presupuestapp03.png",
           "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
+            "en": "Homepage from PresupuestAPP",
+            "es": "Página de incio de PresupuestAPP"
           }
         },
         {
-          "src": "https://picsum.photos/1280/720",
+          "src": "/assets/images/projects/presupuestapp04.png",
           "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
+            "en": "Homepage from PresupuestAPP",
+            "es": "Página de incio de PresupuestAPP"
           }
         }
       ]
     }
   },
   {
-    "slug": "qwer",
-    "title": "AF Store",
-    "category": "backend",
+    "slug": "chatter",
+    "title": "Chatter",
+    "category": "fullstack",
     "shortDescription": {
-      "en": "A Fullstack ecommerce app developed with Remix and Strapi",
-      "es": "Aplicación fullstack desarrollada con Remix y Strapi"
+      "en": "A real-time chat application developed with Remix and Supabase",
+      "es": "Una aplicación de chat en tiempo real, desarrollada con supabase y remix"
     },
     "longDescription": {
-      "en": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
-      "es": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS."
+      "en": "This application makes use of Supabase and Postgresql to maintain message persistence. It allows sending and receiving messages in real time, by subscribing to events in the database. As security measures we will have to authenticate with Github or Gmail to send messages. As for data persistence, I have implemented a Row Level Security policy, a native PostgreSQL security policy.",
+      "es": "Esta aplicación utiliza Supabase y Postgresql para mantener la persistencia de mensajes. Permite enviar y recibir mensajes en tiempo real, mediante la suscripción a eventos en la base de datos. Como medidas de seguridad deberemos autentificarnos con Github o Gmail. En cuanto a la persistencia de datos, he implementado una política de Row Level Security, una política de seguridad nativa de PostgreSQL."
     },
     "links": {
       "github": "https://github.com/BrianC9/af-store-remix",
@@ -141,66 +209,16 @@
         "id": "nextjs",
         "name": "Next"
       },
-      { "id": "java", "name": "Java" }
+      { "id": "remix", "name": "Remix" }
     ],
     "images": {
-      "cover": "https://picsum.photos/1280/720",
-      "collection": [
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        },
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        },
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
+      "cover": {
+        "src": "/assets/images/projects/chatter04.png",
+        "alt": {
+          "en": "Homepage from AF Store",
+          "es": "Página de incio de AF Store"
         }
-      ]
-    }
-  },
-  {
-    "slug": "asdw",
-    "title": "AF Store",
-    "category": "frontend",
-    "shortDescription": {
-      "en": "A Fullstack ecommerce app developed with Remix and Strapi",
-      "es": "Aplicación fullstack desarrollada con Remix y Strapi"
-    },
-    "longDescription": {
-      "en": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
-      "es": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS."
-    },
-
-    "technologies": [
-      {
-        "id": "react",
-        "name": "React JS"
       },
-
-      {
-        "id": "tailwind",
-        "name": "Tailwind CSS"
-      },
-      {
-        "id": "nextjs",
-        "name": "Next"
-      },
-      { "id": "java", "name": "Java" }
-    ],
-    "images": {
-      "cover": "https://picsum.photos/1280/720",
       "collection": [
         {
           "src": "https://picsum.photos/1280/720",

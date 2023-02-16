@@ -6,6 +6,8 @@ import MainLayout from '@/components/MainLayout';
 import { iconResolver } from '@/utils/iconResolver';
 import Slider from '@/components/Slider';
 import Link from 'next/link';
+import projects from '@/public/assets/json/projects.json';
+
 const project = {
   slug: 'afstore',
   title: 'AF Store',
@@ -24,7 +26,7 @@ const project = {
   },
   technologies: [
     {
-      id: 'react',
+      id: 'remix',
       name: 'React JS',
     },
 
@@ -67,9 +69,13 @@ const project = {
 };
 
 function Project() {
-  // const router = useRouter();
-  // const { projectId } = router.query;
-  const { title, longDescription, technologies, images, links } = project;
+  const router = useRouter();
+  const { projectId } = router.query;
+  const buscado = projects.find((el) => el.slug === projectId);
+
+  console.log(buscado.title);
+  console.log(projectId);
+  const { title, longDescription, technologies, images, links } = buscado;
   return (
     <MainLayout page={title}>
       <main className='px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30 max-w-[85ch] mx-auto'>
@@ -77,7 +83,9 @@ function Project() {
           id='heading'
           className='grid gap-4 grid-cols-1 place-content-center place-items-center w-2/4 mx-auto'
         >
-          <h1 className='text-2xl md:text-4xl uppercase'>{title}</h1>
+          <h1 className='text-2xl md:text-4xl uppercase text-center'>
+            {title}
+          </h1>
           <Image
             src={'/assets/images/undraw-project.svg'}
             alt='A person launching a rocket'

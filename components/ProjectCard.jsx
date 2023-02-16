@@ -13,7 +13,7 @@ function ProjectCard({ project }) {
           <a href={`/projects/${slug}`}>
             <img
               className='absolute inset-0 h-full w-full object-cover'
-              src={images.cover}
+              src={images.cover.src}
               alt={`Go to ${title} poject page`}
             />
           </a>

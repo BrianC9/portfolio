@@ -11,7 +11,7 @@ function Index() {
   };
 
   return (
-    <MainLayout page={'About me'}>
+    <MainLayout page={'Projects'}>
       <main className='px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30'>
         <section
           id='heading'
