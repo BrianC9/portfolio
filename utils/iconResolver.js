@@ -91,7 +91,7 @@ export const iconResolver = (id, size, name) => {
     <SiNetlify title={name} color="#7AB9D0" size={size} />
   );
   IconsMap.set("vercel", <SiVercel title={name} size={size} />);
-  IconsMap.set("css", <SiCss3 title={name} color="blue" size={size} />);
+  IconsMap.set("css", <SiCss3 title={name} color="#2862E9" size={size} />);
   IconsMap.set(
     "typescript",
     <SiTypescript title={name} color="#2F74C0" size={size} />

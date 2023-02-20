@@ -9,7 +9,7 @@
     },
     "longDescription": {
       "en": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS.",
-      "es": "Sneakers ecommerce inspired in the Nike Air Force sneaker collection. The Frontend of this project has been made with Remix and the Backend with Strapi, a headless CMS."
+      "es": "Ecommerce de zapatillas inspirado en la colección de zapatillas Nike Air Force. El Frontend de este proyecto se ha realizado con Remix y el Backend con Strapi, un CMS headless."
     },
     "links": {
       "github": "https://github.com/BrianC9/af-store-remix",
@@ -21,16 +21,13 @@
         "name": "React JS"
       },
       { "id": "strapi", "name": "Strapi CMS" },
-      {
-        "id": "tailwind",
-        "name": "Tailwind CSS"
-      },
-
-      { "id": "remix", "name": "Remix" }
+      { "id": "remix", "name": "Remix" },
+      { "id": "vercel", "name": "Vercel" },
+      { "id": "css", "name": "CSS 3" }
     ],
     "images": {
       "cover": {
-        "src": "/assets/images/projects/flighttracker01.webp",
+        "src": "/assets/images/projects/afstore01.png",
         "alt": {
           "en": "Homepage from AF Store",
           "es": "Página de incio de AF Store"
@@ -38,21 +35,49 @@
       },
       "collection": [
         {
-          "src": "https://picsum.photos/1280/720",
+          "src": "/assets/images/projects/afstore01.png",
           "alt": {
             "en": "Homepage from AF Store",
             "es": "Página de incio de AF Store"
           }
         },
         {
-          "src": "https://picsum.photos/1280/720",
+          "src": "/assets/images/projects/afstore02.png",
           "alt": {
             "en": "Homepage from AF Store",
             "es": "Página de incio de AF Store"
           }
         },
         {
-          "src": "https://picsum.photos/1280/720",
+          "src": "/assets/images/projects/afstore03.png",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        },
+        {
+          "src": "/assets/images/projects/afstore04.png",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        },
+        {
+          "src": "/assets/images/projects/afstore05.png",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        },
+        {
+          "src": "/assets/images/projects/afstore06.png",
+          "alt": {
+            "en": "Homepage from AF Store",
+            "es": "Página de incio de AF Store"
+          }
+        },
+        {
+          "src": "/assets/images/projects/afstore07.png",
           "alt": {
             "en": "Homepage from AF Store",
             "es": "Página de incio de AF Store"
