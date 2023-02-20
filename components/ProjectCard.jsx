@@ -25,10 +25,12 @@ function ProjectCard({ project }) {
           <h2 className='text-xl mt-2 mb-2 font-bold'>{title}</h2>
           <div className='my-3 flex gap-1 '>
             {technologies.map((tech) => (
-              <div key={tech.id}>{iconResolver(tech.id, 60, tech.name)}</div>
+              <div key={tech.id + slug}>
+                {iconResolver(tech.id, 60, tech.name)}
+              </div>
             ))}
           </div>
-          <p className='text-sm'>{shortDescription.en}</p>
+          <p className='text-clamp'>{shortDescription.en}</p>
         </div>
         <div className='border-t border-b p-4 text-xs text-gray-700 '>
           <Link href={`/projects/${slug}`} className='flex gap-1 items-center'>

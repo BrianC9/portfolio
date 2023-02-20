@@ -13,7 +13,7 @@ import {
   SiCss3,
   SiNetlify,
   SiVercel,
-  SiSupabase,
+  SiStrapi,
 } from 'react-icons/si';
 import {
   FaReact,
@@ -23,7 +23,7 @@ import {
   FaExternalLinkSquareAlt,
 } from 'react-icons/fa';
 const IconsMap = new Map();
-export const Remix = ({ size, title, color }) => {
+export const Remix = ({ size, title }) => {
   return (
     <>
       <svg
@@ -31,7 +31,6 @@ export const Remix = ({ size, title, color }) => {
         width={size}
         height={size}
         viewBox='0 0 256 297'
-        color={color}
       >
         <title>{title}</title>
         <path
@@ -42,11 +41,31 @@ export const Remix = ({ size, title, color }) => {
     </>
   );
 };
+export const Supabase = ({ size, title, color }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width={size}
+      height={size}
+      fill={color}
+      viewBox='0 0 24 24'
+    >
+      <title>{title}</title>
+      <path d='M21.362 9.354H12V.396a.396.396 0 0 0-.716-.233L2.203 12.424l-.401.562a1.04 1.04 0 0 0 .836 1.659H12v8.959a.396.396 0 0 0 .716.233l9.081-12.261l.401-.562a1.04 1.04 0 0 0-.836-1.66z' />
+    </svg>
+  );
+};
 export const iconResolver = (id, size, name) => {
   IconsMap.set(
     'redirect',
     <FaExternalLinkSquareAlt title={name} size={size} />
   );
+  IconsMap.set(
+    'supabase',
+    <Supabase title={name} color='#40D08E' size={size} />
+  );
+  IconsMap.set('strapi', <SiStrapi title={name} size={size} />);
+
   IconsMap.set('react', <FaReact title={name} color='#5ED3F3' size={size} />);
   IconsMap.set('spring', <SiSpring title={name} color='#70B366' size={size} />);
   IconsMap.set(

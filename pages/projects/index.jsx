@@ -1,3 +1,4 @@
+// TODO: bg-color of the tag which is selected to filter the projects
 import MainLayout from '@/components/MainLayout';
 import Image from 'next/image';
 import React from 'react';

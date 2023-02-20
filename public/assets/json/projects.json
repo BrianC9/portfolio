@@ -20,15 +20,12 @@
         "id": "react",
         "name": "React JS"
       },
-
+      { "id": "strapi", "name": "Strapi CMS" },
       {
         "id": "tailwind",
         "name": "Tailwind CSS"
       },
-      {
-        "id": "nextjs",
-        "name": "Next JS"
-      },
+
       { "id": "remix", "name": "Remix" }
     ],
     "images": {
@@ -201,15 +198,13 @@
         "name": "React JS"
       },
 
+      { "id": "supabase", "name": "Supabase" },
       {
         "id": "tailwind",
         "name": "Tailwind CSS"
       },
-      {
-        "id": "nextjs",
-        "name": "Next"
-      },
-      { "id": "remix", "name": "Remix" }
+      { "id": "remix", "name": "Remix" },
+      { "id": "vercel", "name": "Vercel" }
     ],
     "images": {
       "cover": {

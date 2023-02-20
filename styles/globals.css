@@ -14,6 +14,14 @@
 }
 @tailwind components;
 @tailwind utilities;
+text-clamp {
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  @apply text-sm;
+}
+
 @layer components {
   .c-card img {
     transition: transform 0.3s ease-in-out;
