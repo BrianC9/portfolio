@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import { iconResolver } from "@/utils/iconResolver";
 import Link from "next/link";
-import React from "react";
-
+import { useRef } from "react";
+import { useDraggable } from "react-use-draggable-scroll";
 function ProjectCard({ project }) {
+  const ref = useRef();
+  const { events } = useDraggable(ref);
   const { slug, title, shortDescription, technologies, images, category } =
     project;
   return (
@@ -23,10 +25,14 @@ function ProjectCard({ project }) {
             {category}
           </span>
           <h2 className="text-xl mt-2 mb-2 font-bold">{title}</h2>
-          <div className="my-3 flex gap-2 ">
+          <div
+            className="my-3 flex gap-4 overflow-x-scroll scrollbar-hide "
+            {...events}
+            ref={ref}
+          >
             {technologies.map((tech) => (
               <div key={tech.id + slug}>
-                {iconResolver(tech.id, 45, tech.name)}
+                {iconResolver(tech.id, 50, tech.name)}
               </div>
             ))}
           </div>
