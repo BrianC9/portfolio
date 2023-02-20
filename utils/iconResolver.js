@@ -14,6 +14,7 @@ import {
   SiNetlify,
   SiVercel,
   SiStrapi,
+  SiPostman,
 } from "react-icons/si";
 import {
   FaReact,
@@ -21,6 +22,7 @@ import {
   FaNodeJs,
   FaJava,
   FaExternalLinkSquareAlt,
+  FaDatabase,
 } from "react-icons/fa";
 const IconsMap = new Map();
 export const Remix = ({ size, title }) => {
@@ -64,6 +66,11 @@ export const iconResolver = (id, size, name) => {
     "supabase",
     <Supabase title={name} color="#40D08E" size={size} />
   );
+  IconsMap.set(
+    "postman",
+    <SiPostman title={name} color="#FF6C37" size={size} />
+  );
+  IconsMap.set("h2", <FaDatabase title={name} color="current" size={size} />);
   IconsMap.set("strapi", <SiStrapi title={name} size={size} />);
 
   IconsMap.set("react", <FaReact title={name} color="#5ED3F3" size={size} />);

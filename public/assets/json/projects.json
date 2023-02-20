@@ -268,7 +268,8 @@
       {
         "id": "typescript",
         "name": "Typesccript"
-      }
+      },
+      { "id": "postman", "name": "Postman" }
     ],
     "images": {
       "cover": {
@@ -309,7 +310,8 @@
       {
         "id": "mongo",
         "name": "Mongo DB"
-      }
+      },
+      { "id": "postman", "name": "Postman" }
     ],
     "images": {
       "cover": {
@@ -346,7 +348,8 @@
       {
         "id": "java",
         "name": "Java"
-      }
+      },
+      { "id": "postman", "name": "Postman" }
     ],
     "images": {
       "cover": {
@@ -390,8 +393,8 @@
       "es": "He pensado que la mejor manera de mostrarte un proyecto Backend es mirando directamente el código, por lo que no dudes en visitar el repositorio de Github"
     },
     "shortDescription": {
-      "en": "A challenge part of the NUWE Hackaton in Nov' 2022.",
-      "es": "Un reto parte de la Hackaton por NUWE en Nov' 2022."
+      "en": "A tech challenge to participate in the the Nuwe Hackaton in Nov 2022.",
+      "es": "Un reto  para participar en la Nuwe Hackaton en Nov 2022."
     },
     "longDescription": {
       "en": "This application makes use of Supabase and Postgresql to maintain message persistence. It allows sending and receiving messages in real time, by subscribing to events in the database. As security measures we will have to authenticate with Github or Gmail to send messages. As for data persistence, I have implemented a Row Level Security policy, a native PostgreSQL security policy.",
@@ -410,7 +413,8 @@
       {
         "id": "java",
         "name": "Java"
-      }
+      },
+      { "id": "postman", "name": "Postman" }
     ],
     "images": {
       "cover": {

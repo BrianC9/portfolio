@@ -1,4 +1,3 @@
-// TODO: Refactor to use the dynamic fetch via useRouter
 import React from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -20,7 +19,7 @@ function Project() {
       <main className="px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30 max-w-[85ch] mx-auto">
         <section
           id="heading"
-          className="grid gap-4 grid-cols-1 place-content-center place-items-center w-2/4 mx-auto"
+          className="grid gap-4 grid-cols-1 place-content-center place-items-center  mx-auto"
         >
           <h1 className="text-2xl md:text-4xl uppercase text-center">
             {title}
@@ -28,9 +27,9 @@ function Project() {
           <Image
             src={"/assets/images/undraw-project.svg"}
             alt="A person launching a rocket"
-            width={400}
-            height={400}
-            className=" w-full md:w-2/4"
+            width={700}
+            height={700}
+            className="w-1/4"
             priority={true}
             blurDataURL={"/assets/images/undraw-project.svg"}
             placeholder="blur"
