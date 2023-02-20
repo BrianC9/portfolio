@@ -189,8 +189,8 @@
       "es": "Esta aplicación utiliza Supabase y Postgresql para mantener la persistencia de mensajes. Permite enviar y recibir mensajes en tiempo real, mediante la suscripción a eventos en la base de datos. Como medidas de seguridad deberemos autentificarnos con Github o Gmail. En cuanto a la persistencia de datos, he implementado una política de Row Level Security, una política de seguridad nativa de PostgreSQL."
     },
     "links": {
-      "github": "https://github.com/BrianC9/af-store-remix",
-      "preview": "https://af-store-remix.vercel.app/"
+      "github": "https://github.com/BrianC9/chatter-app",
+      "preview": "https://chatter-app-psi.vercel.app/"
     },
     "technologies": [
       {
@@ -243,6 +243,10 @@
     "slug": "apiflighttracker",
     "title": "Flight Tracker API",
     "category": "backend",
+    "note": {
+      "en": "I have thought the best way to show you a backend project is to look directly at the code, so feel free to visit the Github repository.",
+      "es": "He pensado que la mejor manera de mostrarte un proyecto Backend es mirando directamente el código, por lo que no dudes en visitar el repositorio de Github"
+    },
     "shortDescription": {
       "en": "A Typescript and Express CRUD API to let pilots record their flights.",
       "es": "Una API CRUD de Typescript y Express para que los pilotos registren sus vuelos."
@@ -252,8 +256,7 @@
       "es": "Nuestro usuario es un piloto que quiere registrar información sobre los vuelos que ha realizado, en forma de entradas de diario. En cada entrada quiere anotar las condiciones meteorológicas, la fecha, la visibilidad y un comentario sobre el vuelo."
     },
     "links": {
-      "github": "https://github.com/BrianC9/Typescript-Express-API",
-      "preview": "https://af-store-remix.vercel.app/"
+      "github": "https://github.com/BrianC9/Typescript-Express-API"
     },
     "technologies": [
       {
@@ -274,36 +277,17 @@
           "en": "a person pointing on a map by glenn-carstens-peters-unsplash",
           "es": "una persona señalado un lugar en el mapa por glenn-carstens-peters-unsplash"
         }
-      },
-      "collection": [
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        },
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        },
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        }
-      ]
+      }
     }
   },
   {
     "slug": "apitaskmanager",
     "title": "Task Manager API",
     "category": "backend",
+    "note": {
+      "en": "I have thought the best way to show you a backend project is to look directly at the code, so feel free to visit the Github repository.",
+      "es": "He pensado que la mejor manera de mostrarte un proyecto Backend es mirando directamente el código, por lo que no dudes en visitar el repositorio de Github"
+    },
     "shortDescription": {
       "en": "A real-time chat application developed with Remix and Supabase",
       "es": "Una aplicación de chat en tiempo real, desarrollada con supabase y remix"
@@ -313,8 +297,7 @@
       "es": "Esta aplicación utiliza Supabase y Postgresql para mantener la persistencia de mensajes. Permite enviar y recibir mensajes en tiempo real, mediante la suscripción a eventos en la base de datos. Como medidas de seguridad deberemos autentificarnos con Github o Gmail. En cuanto a la persistencia de datos, he implementado una política de Row Level Security, una política de seguridad nativa de PostgreSQL."
     },
     "links": {
-      "github": "https://github.com/BrianC9/taskManager",
-      "preview": "https://af-store-remix.vercel.app/"
+      "github": "https://github.com/BrianC9/taskManager"
     },
     "technologies": [
       {
@@ -335,30 +318,7 @@
           "en": "yellow sticky notes beside white apple magic mouse and white apple keyboard by kelly-sikkema-nz-unsplash",
           "es": "post its amarillos a lado de un teclado y raton de apple blancos por kelly-sikkema-nz-unsplash"
         }
-      },
-      "collection": [
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        },
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        },
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        }
-      ]
+      }
     }
   },
   {
@@ -374,8 +334,7 @@
       "es": "Esta aplicación utiliza Supabase y Postgresql para mantener la persistencia de mensajes. Permite enviar y recibir mensajes en tiempo real, mediante la suscripción a eventos en la base de datos. Como medidas de seguridad deberemos autentificarnos con Github o Gmail. En cuanto a la persistencia de datos, he implementado una política de Row Level Security, una política de seguridad nativa de PostgreSQL."
     },
     "links": {
-      "github": "https://github.com/BrianC9/studentCRUD-SpringBoot",
-      "preview": "https://af-store-remix.vercel.app/"
+      "github": "https://github.com/BrianC9/studentCRUD-SpringBoot"
     },
     "technologies": [
       {
@@ -426,6 +385,10 @@
     "slug": "nuwechallenge",
     "title": "Nuwe Challenge API",
     "category": "backend",
+    "note": {
+      "en": "I have thought the best way to show you a backend project is to look directly at the code, so feel free to visit the Github repository.",
+      "es": "He pensado que la mejor manera de mostrarte un proyecto Backend es mirando directamente el código, por lo que no dudes en visitar el repositorio de Github"
+    },
     "shortDescription": {
       "en": "A challenge part of the NUWE Hackaton in Nov' 2022.",
       "es": "Un reto parte de la Hackaton por NUWE en Nov' 2022."
@@ -435,8 +398,7 @@
       "es": "Esta aplicación utiliza Supabase y Postgresql para mantener la persistencia de mensajes. Permite enviar y recibir mensajes en tiempo real, mediante la suscripción a eventos en la base de datos. Como medidas de seguridad deberemos autentificarnos con Github o Gmail. En cuanto a la persistencia de datos, he implementado una política de Row Level Security, una política de seguridad nativa de PostgreSQL."
     },
     "links": {
-      "github": "https://github.com/BrianC9/Nuwe-Challenge-Jump2Digital",
-      "preview": "https://af-store-remix.vercel.app/"
+      "github": "https://github.com/BrianC9/Nuwe-Challenge-Jump2Digital"
     },
     "technologies": [
       {
@@ -457,30 +419,7 @@
           "en": "a person typ by fahim-muntashir-unsplash",
           "es": "post its amarillos a lado de un teclado y raton de apple blancos por fahim-muntashir-unsplash"
         }
-      },
-      "collection": [
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        },
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        },
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        }
-      ]
+      }
     }
   }
 ]
