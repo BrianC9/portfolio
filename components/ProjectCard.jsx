@@ -2,6 +2,7 @@
 import { iconResolver } from "@/utils/iconResolver";
 import Link from "next/link";
 import { useRef } from "react";
+import Image from "next/image";
 import { useDraggable } from "react-use-draggable-scroll";
 function ProjectCard({ project }) {
   const ref = useRef();
@@ -13,10 +14,12 @@ function ProjectCard({ project }) {
       <div className="c-card block overflow-hidden rounded-lg bg-white shadow-md hover:shadow-xl">
         <div className="relative overflow-hidden pb-60">
           <Link href={`/projects/${slug}`}>
-            <img
+            <Image
               className="absolute inset-0 h-full w-full object-cover"
+              width={400}
+              height={400}
               src={images.cover.src}
-              alt={`Go to ${title} poject page`}
+              alt={images.cover.alt.en}
             />
           </Link>
         </div>
@@ -32,7 +35,7 @@ function ProjectCard({ project }) {
           >
             {technologies.map((tech) => (
               <div key={tech.id + slug}>
-                {iconResolver(tech.id, 50, tech.name)}
+                {iconResolver(tech.id, 40, tech.name)}
               </div>
             ))}
           </div>

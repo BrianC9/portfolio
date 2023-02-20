@@ -30,7 +30,7 @@
     ],
     "images": {
       "cover": {
-        "src": "https://picsum.photos/1280/720",
+        "src": "/assets/images/projects/flighttracker01.webp",
         "alt": {
           "en": "Homepage from AF Store",
           "es": "Página de incio de AF Store"
@@ -290,12 +290,12 @@
       "es": "He pensado que la mejor manera de mostrarte un proyecto Backend es mirando directamente el código, por lo que no dudes en visitar el repositorio de Github"
     },
     "shortDescription": {
-      "en": "A real-time chat application developed with Remix and Supabase",
-      "es": "Una aplicación de chat en tiempo real, desarrollada con supabase y remix"
+      "en": "A CRUD API that lets the user keep track of the tasks they have.",
+      "es": "Una API CRUD que permite al usuario llevar un registro de las tareas que necesita."
     },
     "longDescription": {
-      "en": "This application makes use of Supabase and Postgresql to maintain message persistence. It allows sending and receiving messages in real time, by subscribing to events in the database. As security measures we will have to authenticate with Github or Gmail to send messages. As for data persistence, I have implemented a Row Level Security policy, a native PostgreSQL security policy.",
-      "es": "Esta aplicación utiliza Supabase y Postgresql para mantener la persistencia de mensajes. Permite enviar y recibir mensajes en tiempo real, mediante la suscripción a eventos en la base de datos. Como medidas de seguridad deberemos autentificarnos con Github o Gmail. En cuanto a la persistencia de datos, he implementado una política de Row Level Security, una política de seguridad nativa de PostgreSQL."
+      "en": "This API provides a set of endpoints that allow users to create, read, update, and delete tasks. The API can be integrated with front-end or back-end applications to facilitate task management for users.",
+      "es": "Esta API proporciona un conjunto de endpoints que permiten a los usuarios crear, leer, actualizar y eliminar tareas. La API puede ser integrada con aplicaciones front-end o back-end para facilitar la gestión de tareas de los usuarios."
     },
     "links": {
       "github": "https://github.com/BrianC9/taskManager"
@@ -327,13 +327,17 @@
     "slug": "apistudentmanager",
     "title": "Student Manager API",
     "category": "backend",
+    "note": {
+      "en": "I have thought the best way to show you a backend project is to look directly at the code, so feel free to visit the Github repository.",
+      "es": "He pensado que la mejor manera de mostrarte un proyecto Backend es mirando directamente el código, por lo que no dudes en visitar el repositorio de Github"
+    },
     "shortDescription": {
-      "en": "A CRUD API that lets the user keep track of the students they have.",
+      "en": "A CRUD API that lets the user keep track of the tasks they have.",
       "es": "Una API CRUD que permite al usuario llevar un registro de las tareas que necesita."
     },
     "longDescription": {
-      "en": "This application makes use of Supabase and Postgresql to maintain message persistence. It allows sending and receiving messages in real time, by subscribing to events in the database. As security measures we will have to authenticate with Github or Gmail to send messages. As for data persistence, I have implemented a Row Level Security policy, a native PostgreSQL security policy.",
-      "es": "Esta aplicación utiliza Supabase y Postgresql para mantener la persistencia de mensajes. Permite enviar y recibir mensajes en tiempo real, mediante la suscripción a eventos en la base de datos. Como medidas de seguridad deberemos autentificarnos con Github o Gmail. En cuanto a la persistencia de datos, he implementado una política de Row Level Security, una política de seguridad nativa de PostgreSQL."
+      "en": "This API provides a set of endpoints that allow users to create, read, update, and delete students from the collection. The API can be integrated with front-end or back-end applications to facilitate student management for users.",
+      "es": "Esta API proporciona un conjunto de endpoints que permiten a los usuarios crear, leer, actualizar y eliminar alumnos de una colección. La API puede ser integrada con aplicaciones front-end o back-end para facilitar la gestión de alumnos de los usuarios."
     },
     "links": {
       "github": "https://github.com/BrianC9/studentCRUD-SpringBoot"
@@ -353,35 +357,12 @@
     ],
     "images": {
       "cover": {
-        "src": "/assets/images/projects/taskmanager01.webp",
+        "src": "/assets/images/projects/studentmanager01.webp",
         "alt": {
           "en": "yellow sticky notes beside white apple magic mouse and white apple keyboard by kelly-sikkema-nz-unsplash",
           "es": "post its amarillos a lado de un teclado y raton de apple blancos por kelly-sikkema-nz-unsplash"
         }
-      },
-      "collection": [
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        },
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        },
-        {
-          "src": "https://picsum.photos/1280/720",
-          "alt": {
-            "en": "Homepage from AF Store",
-            "es": "Página de incio de AF Store"
-          }
-        }
-      ]
+      }
     }
   },
   {
@@ -397,15 +378,15 @@
       "es": "Un reto  para participar en la Nuwe Hackaton en Nov 2022."
     },
     "longDescription": {
-      "en": "This application makes use of Supabase and Postgresql to maintain message persistence. It allows sending and receiving messages in real time, by subscribing to events in the database. As security measures we will have to authenticate with Github or Gmail to send messages. As for data persistence, I have implemented a Row Level Security policy, a native PostgreSQL security policy.",
-      "es": "Esta aplicación utiliza Supabase y Postgresql para mantener la persistencia de mensajes. Permite enviar y recibir mensajes en tiempo real, mediante la suscripción a eventos en la base de datos. Como medidas de seguridad deberemos autentificarnos con Github o Gmail. En cuanto a la persistencia de datos, he implementado una política de Row Level Security, una política de seguridad nativa de PostgreSQL."
+      "en": "The technological challenge consists of creating an API, with a connection to a SQL database. This API will have the following endpoints as requirements: Obtain the companies from a list, allowing filtering by size, industry and year of foundation.The aim is to see the handling of SQL queries and the correct structuring of the code..",
+      "es": "El reto tecnológico consiste en realizar una API, con conexión a una base de datos SQL. Esta API tendrá los siguientes endpoints como requerimiento: Obtener las empresas de un listado, permitiendo filtrar por tamaño, industria y año de fundación. Lo que se pretende ver es el manejo de consultas SQL y la estructuración correcta del código."
     },
     "links": {
       "github": "https://github.com/BrianC9/Nuwe-Challenge-Jump2Digital"
     },
     "technologies": [
       {
-        "id": "h2",
+        "id": "dbgeneric",
         "name": "H2 DB"
       },
 
@@ -420,8 +401,8 @@
       "cover": {
         "src": "/assets/images/projects/nuwechallenge01.webp",
         "alt": {
-          "en": "a person typ by fahim-muntashir-unsplash",
-          "es": "post its amarillos a lado de un teclado y raton de apple blancos por fahim-muntashir-unsplash"
+          "en": "a person typing by fahim-muntashir-unsplash",
+          "es": "una persona tecleando por fahim-muntashir-unsplash"
         }
       }
     }

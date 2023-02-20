@@ -70,7 +70,10 @@ export const iconResolver = (id, size, name) => {
     "postman",
     <SiPostman title={name} color="#FF6C37" size={size} />
   );
-  IconsMap.set("h2", <FaDatabase title={name} color="current" size={size} />);
+  IconsMap.set(
+    "dbgeneric",
+    <FaDatabase title={name} color="current" size={size} />
+  );
   IconsMap.set("strapi", <SiStrapi title={name} size={size} />);
 
   IconsMap.set("react", <FaReact title={name} color="#5ED3F3" size={size} />);
