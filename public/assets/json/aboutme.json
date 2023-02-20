@@ -9,7 +9,7 @@
       { "id": "express", "name": "Express" },
       { "id": "postgresql", "name": "Postgresql" },
       { "id": "mysql", "name": "Mysql" },
-      { "id": "mongodb", "name": "Mongodb" },
+      { "id": "mongo", "name": "Mongodb" },
       { "id": "nextjs", "name": "Next JS" },
       { "id": "github", "name": "Github" },
       { "id": "nodejs", "name": "Nodejs" },
