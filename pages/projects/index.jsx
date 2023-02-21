@@ -2,10 +2,10 @@
 import MainLayout from "@/components/MainLayout";
 import Image from "next/image";
 import React from "react";
-import projects from "@/public/assets/json/projects.json";
+import projectsJSON from "@/public/assets/json/projects.json";
 import ProjectCard from "@/components/ProjectCard";
 import { useState } from "react";
-function Index() {
+function Index({ projects }) {
   const [category, setCategory] = useState("all");
   const handleCategory = (e) => {
     setCategory(e.target.value);
@@ -66,5 +66,7 @@ function Index() {
     </MainLayout>
   );
 }
-
+export async function getStaticProps() {
+  return { props: { projects: projectsJSON } };
+}
 export default Index;

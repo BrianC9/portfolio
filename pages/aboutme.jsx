@@ -7,8 +7,6 @@ import personalInfo from "../public/assets/json/aboutme.json";
 import { iconResolver } from "@/utils/iconResolver.js";
 import Timeline from "@/components/Timeline";
 function Aboutme() {
-  console.log(jobs);
-
   return (
     <MainLayout page={"About me"}>
       <main className="px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30">

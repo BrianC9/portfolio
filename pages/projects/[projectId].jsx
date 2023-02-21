@@ -5,13 +5,21 @@ import MainLayout from "@/components/MainLayout";
 import { iconResolver } from "@/utils/iconResolver";
 import Slider from "@/components/Slider";
 import Link from "next/link";
-import projects from "@/public/assets/json/projects.json";
+import projectsJSON from "@/public/assets/json/projects.json";
 
-function Project() {
-  const router = useRouter();
-  const { projectId } = router.query;
-  const project = projects.find((el) => el.slug === projectId);
+export async function getStaticPaths() {
+  const paths = projectsJSON.map((project) => ({
+    params: { projectId: project.slug },
+  }));
+  return { paths, fallback: false };
+}
 
+export async function getStaticProps({ params }) {
+  const project = projectsJSON.find((el) => el.slug === params.projectId);
+  return { props: { project } };
+}
+
+function Project({ project }) {
   const { title, category, longDescription, technologies, images, links } =
     project;
   return (

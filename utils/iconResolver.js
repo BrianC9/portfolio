@@ -16,6 +16,7 @@ import {
   SiStrapi,
   SiPostman,
   SiStyledcomponents,
+  SiChartdotjs,
 } from "react-icons/si";
 import {
   FaReact,
@@ -66,6 +67,10 @@ export const iconResolver = (id, size, name) => {
   IconsMap.set(
     "styledcomp",
     <SiStyledcomponents color="current" title={name} size={size} />
+  );
+  IconsMap.set(
+    "chartjs",
+    <SiChartdotjs color="current" title={name} size={size} />
   );
   IconsMap.set(
     "supabase",
