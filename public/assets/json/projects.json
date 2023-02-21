@@ -431,5 +431,153 @@
         }
       }
     }
+  },
+  {
+    "slug": "cookbook",
+    "title": "Cookbook",
+    "category": "frontend",
+    "shortDescription": {
+      "en": "Cookbook is an application that allows you to browse through thousands of available recipes.",
+      "es": "Cookbook es una aplicación que te permite consultar entre miles de recetas disponibles."
+    },
+    "longDescription": {
+      "en": "Cookbook is an application that allows you to browse through thousands of available recipes. You have a selection of food categories, but you can also search by ingredients or by the name of the dish you want to cook. You will have access to a detailed view of the dish with its preparation instructions and list of ingredients.",
+      "es": "Cookbook es una aplicación que te permite consultar entre miles de recetas disponibles. Tienes una selección de categorías de comida, pero también puedes buscar por ingredientes o  por nombre del plato de cocina que quieras. Tendrás acceso a una vista detallada del plato con sus instrucciones de preparación y lista de ingredientes."
+    },
+    "links": {
+      "github": "https://github.com/BrianC9/recipe-app-react",
+      "preview": "https://recipe-app-react-liart.vercel.app/"
+    },
+    "technologies": [
+      {
+        "id": "react",
+        "name": "React JS"
+      },
+
+      {
+        "id": "styledcomp",
+        "name": "Styled Components"
+      },
+
+      {
+        "id": "vercel",
+        "name": "Vercel"
+      }
+    ],
+    "images": {
+      "cover": {
+        "src": "/assets/images/projects/cookbook01.png",
+        "alt": {
+          "en": "Homepage from Cookbook",
+          "es": "Página de incio de Cookbook"
+        }
+      },
+      "collection": [
+        {
+          "src": "/assets/images/projects/cookbook01.png",
+          "alt": {
+            "en": "Homepage from VetCare",
+            "es": "Página de incio de VetCare"
+          }
+        },
+        {
+          "src": "/assets/images/projects/cookbook02.png",
+          "alt": {
+            "en": "Homepage from VetCare",
+            "es": "Página de incio de VetCare"
+          }
+        },
+        {
+          "src": "/assets/images/projects/cookbook03.png",
+          "alt": {
+            "en": "Homepage from VetCare",
+            "es": "Página de incio de VetCare"
+          }
+        },
+        {
+          "src": "/assets/images/projects/cookbook04.png",
+          "alt": {
+            "en": "Homepage from VetCare",
+            "es": "Página de incio de VetCare"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "slug": "cryptoquoter",
+    "title": "Crypto Quoter",
+    "category": "frontend",
+    "shortDescription": {
+      "en": "Check the price of the cryptocurrency you need by selecting your local currency.",
+      "es": "Compruebe el precio de la criptomoneda que necesites seleccionando tu moneda local."
+    },
+    "longDescription": {
+      "en": "With this project I wanted to understand the use of an asynchronous call to an external API by using a form to select: 1. The local currency in which we want to see its price (USD, USX, EUR, etc). 2. The cryptocurrency (BTC, ETH, SOL, etc) of which you want to know the current price, maximum daily, weekly. As an additional tool, I will use styled components for the UI design and the ChartJS library for the results representation.",
+      "es": "Con este proyecto lo que se pretende entender es el uso de una llamada asíncrona a un API externa mediante el uso de un formulario para seleccionar: 1. La moneda oficial en la que deseamos ver su precio (USD, USX, EUR, etc). 2. La criptomoneda (BTC, ETH, SOL, etc) de la cual quieres conocer el precio actual, maximo diario, semanal. Como herramienta adicional, utilizaré styled components para el diseño de la UI y la librería ChartJS para la representación de resultados."
+    },
+    "links": {
+      "github": "https://github.com/BrianC9/crypto-cotizador",
+      "preview": "https://remarkable-tulumba-367cab.netlify.app/"
+    },
+    "technologies": [
+      {
+        "id": "react",
+        "name": "React JS"
+      },
+      {
+        "id": "chartjs",
+        "name": "Chart JS"
+      },
+
+      {
+        "id": "netlify",
+        "name": "Netlify"
+      },
+
+      {
+        "id": "styledcomp",
+        "name": "Styled Components"
+      }
+    ],
+    "images": {
+      "cover": {
+        "src": "/assets/images/projects/cryptoquoter01.png",
+        "alt": {
+          "en": "Homepage from CryptoQuoter",
+          "es": "Página de incio de CryptoQuoter"
+        }
+      },
+      "collection": [
+        {
+          "src": "/assets/images/projects/cryptoquoter01.png",
+          "alt": {
+            "en": "Homepage from VetCare",
+            "es": "Página de incio de VetCare"
+          }
+        },
+        {
+          "src": "/assets/images/projects/cryptoquoter02.png",
+          "alt": {
+            "en": "Homepage from VetCare",
+            "es": "Página de incio de VetCare"
+          }
+        },
+        {
+          "src": "/assets/images/projects/cryptoquoter03.png",
+          "alt": {
+            "en": "Homepage from VetCare",
+            "es": "Página de incio de VetCare"
+          }
+        },
+        {
+          "src": "/assets/images/projects/cryptoquoter04.png",
+          "alt": {
+            "en": "Homepage from VetCare",
+            "es": "Página de incio de VetCare"
+          }
+        }
+      ]
+    }
   }
 ]

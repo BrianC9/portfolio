@@ -15,6 +15,7 @@ import {
   SiVercel,
   SiStrapi,
   SiPostman,
+  SiStyledcomponents,
 } from "react-icons/si";
 import {
   FaReact,
@@ -61,6 +62,10 @@ export const iconResolver = (id, size, name) => {
   IconsMap.set(
     "redirect",
     <FaExternalLinkSquareAlt title={name} size={size} />
+  );
+  IconsMap.set(
+    "styledcomp",
+    <SiStyledcomponents color="current" title={name} size={size} />
   );
   IconsMap.set(
     "supabase",
