@@ -7,7 +7,7 @@ export default function Hamburguer({ isOpen, handleIsOpen }) {
         <div className="relative py-3 mx-auto sm:max-w-xl">
           <nav>
             <button
-              className="relative w-10 h-10 text-primary bg-white rounded-sm focus:outline-none"
+              className="relative w-10 h-10 text-neutral bg-secondary rounded-sm focus:outline-none"
               onClick={handleIsOpen}
             >
               <span className="sr-only">Open main menu</span>
