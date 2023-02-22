@@ -1,4 +1,3 @@
-// TODO:
 import MainLayout from "@/components/MainLayout";
 import Image from "next/image";
 import jobs from "../public/assets/json/jobs.json";
@@ -14,7 +13,7 @@ function Aboutme() {
           id="heading"
           className="grid gap-4 grid-cols-1 place-content-center place-items-center w-2/4 mx-auto"
         >
-          <h1 className="text-2xl md:text-4xl uppercase">About me</h1>
+          <h1 className="text-2xl md:text-4xl uppercase ">About me</h1>
           <Image
             src={"/assets/images/foto-perfil.jpg"}
             alt="Myself portrait"
@@ -70,7 +69,7 @@ function Aboutme() {
             <div
               id="job"
               key={job.id}
-              className="bg-white rounded-lg p-5 flex flex-col gap-2"
+              className="bg-light rounded-lg p-5 flex flex-col gap-2"
             >
               <h3 className="text-xl">{job.role}</h3>
               <p className="font-semibold">{job.company}:</p>

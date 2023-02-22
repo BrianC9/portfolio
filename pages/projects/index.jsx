@@ -34,17 +34,41 @@ function Index({ projects }) {
           <h2 className="text-2xl ">
             Choose a <span className="text-secondary">category:</span>
           </h2>
-          <div className="flex flex-wrap my-3">
-            <button className="tag" value="all" onClick={handleCategory}>
+          <div className="flex flex-wrap my-3 gap-3">
+            <button
+              className={`tag rounded-full ${
+                category === "all" ? "bg-secondary text-neutral" : ""
+              }`}
+              value="all"
+              onClick={handleCategory}
+            >
               All
             </button>
-            <button className="tag" value="fullstack" onClick={handleCategory}>
+            <button
+              className={`tag rounded-full ${
+                category === "fullstack" ? "bg-secondary text-neutral" : ""
+              }`}
+              value="fullstack"
+              onClick={handleCategory}
+            >
               Fullstack
             </button>
-            <button className="tag" value="frontend" onClick={handleCategory}>
+            <button
+              className={`tag rounded-full ${
+                category === "frontend" ? "bg-secondary text-neutral" : ""
+              }`}
+              value="frontend"
+              onClick={handleCategory}
+            >
               Frontend
             </button>
-            <button className="tag" value="backend" onClick={handleCategory}>
+            <button
+              className={`tag rounded-full ${
+                category === "backend" ? "bg-secondary text-neutral" : ""
+              }`}
+              value="backend"
+              onClick={handleCategory}
+            >
               Backend
             </button>
           </div>

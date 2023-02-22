@@ -64,10 +64,7 @@ export const iconResolver = (id, size, name) => {
     "redirect",
     <FaExternalLinkSquareAlt title={name} size={size} />
   );
-  IconsMap.set(
-    "styledcomp",
-    <SiStyledcomponents color="current" title={name} size={size} />
-  );
+  IconsMap.set("styledcomp", <SiStyledcomponents title={name} size={size} />);
   IconsMap.set(
     "chartjs",
     <SiChartdotjs color="current" title={name} size={size} />

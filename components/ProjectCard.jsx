@@ -11,7 +11,7 @@ function ProjectCard({ project }) {
     project;
   return (
     <div className="w-full">
-      <div className="c-card block overflow-hidden rounded-lg bg-white shadow-md hover:shadow-xl">
+      <div className="c-card block overflow-hidden rounded-lg bg-light/50 shadow-md hover:shadow-xl dark">
         <div className="relative overflow-hidden pb-60">
           <Link href={`/projects/${slug}`}>
             <Image
@@ -24,7 +24,7 @@ function ProjectCard({ project }) {
           </Link>
         </div>
         <div className="p-4 ">
-          <span className="inline-block rounded-full bg-secondary p-2 text-xs font-semibold uppercase leading-none tracking-wide text-white">
+          <span className="inline-block rounded-full bg-secondary p-2 text-xs font-semibold uppercase leading-none  text-white tracking-wider">
             {category}
           </span>
           <h2 className="text-xl mt-2 mb-2 font-bold">{title}</h2>

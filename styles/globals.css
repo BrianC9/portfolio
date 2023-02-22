@@ -32,7 +32,7 @@
     transform: scale(1.1);
   }
   .tag {
-    @apply bg-white w-fit border-2 border-secondary px-4 py-2 rounded-lg m-2 font-extrabold  hover:text-white hover:bg-secondary;
+    @apply bg-white w-fit border-2 border-secondary px-4 py-2 rounded-lg  font-extrabold  hover:text-white hover:bg-secondary;
   }
   .typewritter-animation {
     animation: typing 2s steps(11), blink 1s infinite step-end alternate;
@@ -53,11 +53,11 @@
     }
   }
   .timeline {
-    @apply relative mx-auto  max-w-[800px] after:absolute after:inset-y-0 after:left-2/4 after:ml-[-3px] after:w-1.5 after:bg-[#21243D] after:content-[''];
+    @apply relative mx-auto  max-w-[800px] after:absolute after:inset-y-0 after:left-2/4 after:ml-[-3px] after:w-1.5 after:bg-primary after:content-[''];
   }
 
   .containerTime {
-    @apply relative w-6/12 bg-inherit px-10 py-2.5 after:absolute after:right-[-12px] after:top-[25px] after:z-[1] after:h-[25px] after:w-[25px] after:rounded-full after:border-[3px] after:border-solid after:border-[#4792FC] after:bg-white;
+    @apply relative w-6/12 bg-inherit px-10 py-2.5 after:absolute after:right-[-12px] after:top-[25px] after:z-[1] after:h-[25px] after:w-[25px] after:rounded-full after:border-[3px] after:border-solid after:border-secondary after:bg-white;
   }
 
   .right {
@@ -65,7 +65,7 @@
   }
 
   .contentTimeLine {
-    @apply relative rounded-md bg-[white] p-5;
+    @apply relative rounded-md bg-light p-5;
   }
 
   @media screen and (max-width: 768px) {
