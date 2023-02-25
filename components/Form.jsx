@@ -1,16 +1,32 @@
-import React from "react";
+import { sendContactForm } from "@/utils/sendContact";
+import { useState } from "react";
+import useDataForm from "./useDataForm";
 
 function Form() {
+  const { values, handleChange, setValues } = useDataForm();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    await sendContactForm(values);
+
+    setValues({ email: "", name: "", message: "" });
+    setIsLoading(false);
+  };
+
   return (
     <div className="relative mx-auto w-full max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 rounded-lg sm:rounded-xl sm:px-10">
       <div className="w-full">
-        <form action="">
+        <form action="" onSubmit={handleSubmit}>
           <div className="relative mt-6">
             <input
               type="text"
               name="name"
-              id="nmae"
+              id="name"
               required
+              onChange={handleChange}
+              value={values.name}
               placeholder="Name"
               className="peer mt-1 w-full border-b-2 border-light px-0 py-1 placeholder:text-transparent focus:border-primary focus:outline-none"
             />
@@ -26,6 +42,8 @@ function Form() {
               type="email"
               name="email"
               id="email"
+              onChange={handleChange}
+              value={values.email}
               required
               placeholder="Email Address"
               className="peer mt-1 w-full border-b-2 border-light px-0 py-1 placeholder:text-transparent focus:border-gray-500 focus:outline-none"
@@ -41,6 +59,8 @@ function Form() {
             <textarea
               name="message"
               id="message"
+              onChange={handleChange}
+              value={values.message}
               rows={3}
               required
               placeholder="Message..."
@@ -58,7 +78,7 @@ function Form() {
               type="submit"
               className="w-full rounded-md bg-secondary px-3 py-4 text-white hover:bg-sky-600 focus:bg-primart focus:outline-none"
             >
-              Send it
+              {isLoading ? "Sending..." : "Send it"}
             </button>
           </div>
         </form>

@@ -10,7 +10,7 @@ function Contact() {
       <main className="px-5 sm:px-10 md:px-15 lg:px-20 xl:px-30 max-w-[85ch] mx-auto">
         <section
           id="heading"
-          className="grid gap-4 grid-cols-1 place-content-center place-items-center  mx-auto"
+          className="grid gap-4 grid-cols-1 place-content-center place-items-center w-2/4 mx-auto"
         >
           <h1 className="text-2xl md:text-4xl uppercase">Contact</h1>
           <Image
@@ -18,7 +18,7 @@ function Contact() {
             alt="A person launching a rocket"
             width={400}
             height={400}
-            className=" w-full md:w-1/4"
+            className="  w-4/5 md:w-2/5"
             priority={true}
             blurDataURL={"/assets/images/undraw-contact.svg"}
             placeholder="blur"
