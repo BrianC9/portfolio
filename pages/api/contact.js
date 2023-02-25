@@ -2,7 +2,7 @@ import { transporter, mailOptions } from "@/config/nodemailer";
 export default async function handler(req, res) {
   if (req.method === "POST") {
     const { name, email, message } = req.body;
-    if (!name || !email || !message) {
+    if (!name.trim() || !email.trim() || !message.trim()) {
       return res
         .status(400)
         .json({ message: "Error validating the fields on the server" });

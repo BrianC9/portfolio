@@ -1,18 +1,39 @@
-import { sendContactForm } from "@/utils/sendContact";
+import { sendContactForm } from "@/utils/sendContactForm";
 import { useState } from "react";
 import useDataForm from "./useDataForm";
+import { validateForm } from "@/utils/validateForm";
 
 function Form() {
   const { values, handleChange, setValues } = useDataForm();
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    await sendContactForm(values);
-
-    setValues({ email: "", name: "", message: "" });
-    setIsLoading(false);
+    const cleanData = {
+      name: values.name.trim(),
+      email: values.email.trim(),
+      message: values.message.trim(),
+    };
+    try {
+      validateForm(cleanData);
+      await sendContactForm(cleanData);
+      setSuccess(true);
+      setTimeout(() => {
+        setSuccess(false);
+      }, 2500);
+      setValues({ email: "", name: "", message: "" });
+      setIsLoading(false);
+    } catch (e) {
+      console.log(e);
+      setIsLoading(false);
+      setError(e.message);
+      setTimeout(() => {
+        setError("");
+      }, 3000);
+    }
   };
 
   return (
@@ -81,6 +102,18 @@ function Form() {
               {isLoading ? "Sending..." : "Send it"}
             </button>
           </div>
+          {error && (
+            <div className="px-3 py-4 border-red-400 border-2 rounded-md text-center  text-primary">
+              <p>
+                {error} :{"("}
+              </p>
+            </div>
+          )}
+          {success && (
+            <div className="px-3 py-4 border-emerald-400 border-2 rounded-md text-center  text-primary">
+              <p>Message sent :{")"}</p>
+            </div>
+          )}
         </form>
       </div>
     </div>
