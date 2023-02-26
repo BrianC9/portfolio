@@ -35,9 +35,9 @@ function Project({ project }) {
           <Image
             src={"/assets/images/undraw-project.svg"}
             alt="A person launching a rocket"
-            width={700}
-            height={700}
-            className="w-1/4"
+            width={300}
+            height={300}
+            className="md:w-2/5"
             priority={true}
             blurDataURL={"/assets/images/undraw-project.svg"}
             placeholder="blur"
@@ -51,14 +51,14 @@ function Project({ project }) {
           <p>{longDescription.en}</p>
 
           <h3 className="text-xl">Tech stack</h3>
-          <div className="my-3 flex gap-4 ">
+          <div className="my-3 flex gap-5 flex-wrap ">
             {technologies.map((tech) => (
               <div
                 key={tech.id}
-                className="flex flex-col items-center content-center justify-center"
+                className="flex flex-col  items-center content-center justify-center"
               >
                 <span>{iconResolver(tech.id, 35, tech.name)}</span>
-                <p className="font-semibold">{tech.name}</p>
+                <p className="font-semibold text-center">{tech.name}</p>
               </div>
             ))}
           </div>

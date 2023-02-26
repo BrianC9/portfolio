@@ -27,7 +27,6 @@ function Form() {
       setValues({ email: "", name: "", message: "" });
       setIsLoading(false);
     } catch (e) {
-      console.log(e);
       setIsLoading(false);
       setError(e.message);
       setTimeout(() => {

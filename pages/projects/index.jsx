@@ -5,6 +5,7 @@ import React from "react";
 import projectsJSON from "@/public/assets/json/projects.json";
 import ProjectCard from "@/components/ProjectCard";
 import { useState } from "react";
+import Categories from "@/components/Categories";
 function Index({ projects }) {
   const [category, setCategory] = useState("all");
   const handleCategory = (e) => {
@@ -34,44 +35,7 @@ function Index({ projects }) {
           <h2 className="text-2xl ">
             Choose a <span className="text-secondary">category:</span>
           </h2>
-          <div className="flex flex-wrap my-3 gap-3">
-            <button
-              className={`tag rounded-full ${
-                category === "all" ? "bg-secondary text-neutral" : ""
-              }`}
-              value="all"
-              onClick={handleCategory}
-            >
-              All
-            </button>
-            <button
-              className={`tag rounded-full ${
-                category === "fullstack" ? "bg-secondary text-neutral" : ""
-              }`}
-              value="fullstack"
-              onClick={handleCategory}
-            >
-              Fullstack
-            </button>
-            <button
-              className={`tag rounded-full ${
-                category === "frontend" ? "bg-secondary text-neutral" : ""
-              }`}
-              value="frontend"
-              onClick={handleCategory}
-            >
-              Frontend
-            </button>
-            <button
-              className={`tag rounded-full ${
-                category === "backend" ? "bg-secondary text-neutral" : ""
-              }`}
-              value="backend"
-              onClick={handleCategory}
-            >
-              Backend
-            </button>
-          </div>
+          <Categories category={category} handleCategory={handleCategory} />
         </section>
         <section className="my-6 max-w-[85ch] mx-auto">
           <div className="grid grid-cols-1  md:grid-cols-2 gap-5">

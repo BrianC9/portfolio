@@ -6,15 +6,15 @@ function Homepage() {
       <Image
         src={"/assets/images/foto-perfil.jpg"}
         alt="Myself portrait"
-        width={400}
-        height={400}
-        className="rounded-full w-[95%] sm:w-[80%] md:w-full"
+        width={350}
+        height={350}
+        className="rounded-full "
         priority={true}
         blurDataURL={"/assets/images/foto-perfil.jpg"}
         placeholder="blur"
       />
       <section className="flex flex-col items-center  gap-2 md:text-left md:items-start  ">
-        <div className="  sm:pl-6 md:pl-0 text-3xl md:text-4xl  ">
+        <div className=" self-start pl-4 sm:pl-6 md:pl-0 text-3xl md:text-4xl  ">
           <h1 className="typewritter-animation">
             Hi I`m <span className="text-secondary">Bryan</span>
           </h1>
