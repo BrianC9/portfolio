@@ -3,10 +3,10 @@ function SocialIcons({ size }) {
   return (
     <div className='flex items-center gap-3 h-10 md:h-20'>
       <a
-        href='https://www.linkedin.com/in/bryan-cusme/'
+        href='https://github.com/BrianC9'
         className='h-full'
         rel='noreferrer'
-        title='Go to linkedin profle'
+        title='Go to github profle'
         target='_blank'
       >
         <FaGithubSquare
@@ -17,7 +17,7 @@ function SocialIcons({ size }) {
       </a>
       <a
         href='https://www.linkedin.com/in/bryan-cusme/'
-        title='Go to gihtub profle'
+        title='Go to linkedin profle'
         rel='noreferrer'
         target='_blank'
         className='h-full'
